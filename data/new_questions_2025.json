@@ -1,0 +1,258 @@
+[
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2025,
+    "source": "2025年時事新知",
+    "stem": "2025年WHO世界衛生日（4月7日）的主題為何？",
+    "options": [
+      {"key": "A", "text": "My Health, My Right（我的健康，我的權利）"},
+      {"key": "B", "text": "Health for All（人人享有健康）"},
+      {"key": "C", "text": "Healthy Beginnings, Hopeful Futures（健康起點，希望未來）"},
+      {"key": "D", "text": "Our Planet, Our Health（我們的地球，我們的健康）"}
+    ],
+    "answer": "C",
+    "explanation": "2025年WHO世界衛生日主題為「Healthy Beginnings, Hopeful Futures（健康起點，希望未來）」，聚焦孕產婦與新生兒照護，強調生命最初1000天的健康投資。歷年主題：2024年「My Health, My Right（我的健康，我的權利）」、2023年「Health for All（人人享有健康）」、2022年「Our Planet, Our Health（我們的地球，我們的健康）」。",
+    "difficulty": 2,
+    "tags": "WHO,世界衛生日,健康促進,時事"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2025,
+    "source": "2025年時事新知",
+    "stem": "台灣在2025年正式跨入超高齡社會（Super-aged Society），其判斷標準為老年人口（65歲以上）占總人口比例達到多少？",
+    "options": [
+      {"key": "A", "text": "7%以上"},
+      {"key": "B", "text": "14%以上"},
+      {"key": "C", "text": "20%以上"},
+      {"key": "D", "text": "25%以上"}
+    ],
+    "answer": "C",
+    "explanation": "依WHO定義，老年人口（65歲以上）占比：7%=高齡化社會（Aging Society）、14%=高齡社會（Aged Society）、20%=超高齡社會（Super-aged Society）。台灣2018年進入高齡社會，2025年老年人口突破20%，正式成為超高齡社會。台灣從高齡社會到超高齡社會僅約7年，速度居全球前列（法國155年、日本10年）。",
+    "difficulty": 2,
+    "tags": "高齡化,超高齡社會,長照,人口結構"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2024,
+    "source": "2024年食安事件",
+    "stem": "2024年3月台北「寶林茶室」食物中毒事件，造成數人死亡，為台灣首見的何種毒素中毒案例？",
+    "options": [
+      {"key": "A", "text": "肉毒桿菌毒素（Botulinum toxin）"},
+      {"key": "B", "text": "邦克列酸（Bongkrekic Acid）"},
+      {"key": "C", "text": "蘇丹紅（Sudan Red）"},
+      {"key": "D", "text": "黃麴毒素（Aflatoxin）"}
+    ],
+    "answer": "B",
+    "explanation": "2024年3月寶林茶室事件為台灣首例邦克列酸（Bongkrekic Acid）中毒，造成33人受害、6人死亡。邦克列酸由發酵穀物假單胞菌（Burkholderia gladioli）在缺氧環境下產生，常見於腐壞的發酵食品（粿條、河粉等）。此毒素耐熱，一般烹調無法破壞，主要抑制細胞粒線體功能導致器官衰竭。",
+    "difficulty": 3,
+    "tags": "食安,邦克列酸,食物中毒,傳染病防治"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2024,
+    "source": "2024年食安事件",
+    "stem": "2024年2月台灣爆發辣椒粉含有蘇丹紅（Sudan Red）事件，蘇丹紅屬於哪一類有害物質？",
+    "options": [
+      {"key": "A", "text": "重金屬污染物"},
+      {"key": "B", "text": "農藥殘留物"},
+      {"key": "C", "text": "工業用染料（致癌物）"},
+      {"key": "D", "text": "天然毒素"}
+    ],
+    "answer": "C",
+    "explanation": "蘇丹紅（Sudan Red）是工業用偶氮染料，主要用於石油、蠟筆等工業產品著色，屬IARC第3類可能致癌物（Group 3）。台灣2024年事件中，蘇丹紅3號被非法添加於食品用辣椒粉，含量達18ppb以上。依食品安全衛生管理法，蘇丹紅不得用於食品，違者可處7年以下有期徒刑。",
+    "difficulty": 2,
+    "tags": "食安,蘇丹紅,食品添加物,致癌物"
+  },
+  {
+    "category_code": "curriculum108",
+    "q_type": "single",
+    "year": 2024,
+    "source": "108課綱健康識能",
+    "stem": "健康識能（Health Literacy）的三個層次，由低至高排列正確的是？",
+    "options": [
+      {"key": "A", "text": "互動性識能→功能性識能→批判性識能"},
+      {"key": "B", "text": "功能性識能→互動性識能→批判性識能"},
+      {"key": "C", "text": "批判性識能→互動性識能→功能性識能"},
+      {"key": "D", "text": "功能性識能→批判性識能→互動性識能"}
+    ],
+    "answer": "B",
+    "explanation": "Nutbeam（2000）提出健康識能三層次（由低至高）：①功能性識能（Functional Health Literacy）：能讀寫基本健康資訊；②互動性識能（Interactive Health Literacy）：能與醫療人員溝通互動、應用資訊；③批判性識能（Critical Health Literacy）：能批判評估健康資訊，影響社會政策與健康決策。台灣2017年調查顯示，成人健康識能不足者達51.6%，近半數台灣成人健康識能偏低。",
+    "difficulty": 2,
+    "tags": "健康識能,Health Literacy,108課綱,Nutbeam"
+  },
+  {
+    "category_code": "curriculum108",
+    "q_type": "single",
+    "year": 2025,
+    "source": "108課綱新興議題",
+    "stem": "「超加工食品」（Ultra-Processed Food, UPF）的分類依據NOVA系統，屬於第幾類食品？",
+    "options": [
+      {"key": "A", "text": "第一類（未加工或最低限度加工食品）"},
+      {"key": "B", "text": "第二類（廚房用加工食材）"},
+      {"key": "C", "text": "第三類（加工食品）"},
+      {"key": "D", "text": "第四類（超加工食品）"}
+    ],
+    "answer": "D",
+    "explanation": "NOVA食品分類系統（Monteiro, 2010）將食品分為4類：第1類=未加工或最低限度加工（蔬果、肉類）；第2類=廚房用加工食材（植物油、奶油、鹽）；第3類=加工食品（罐頭、醃製品）；第4類=超加工食品（含多種添加物、人工色素、乳化劑的工業製品，如即食麵、含糖飲料）。2025年美國DGA首度正式警示超加工食品，研究顯示與多種慢性病及全死因死亡率呈劑量反應關係。",
+    "difficulty": 3,
+    "tags": "超加工食品,NOVA,食品安全,飲食指南"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2025,
+    "source": "青少年健康新知",
+    "stem": "根據2025年兒福聯盟調查，台灣青少年有心理困擾時，最常尋求哪種管道協助（比例甚至高於輔導室）？",
+    "options": [
+      {"key": "A", "text": "家長"},
+      {"key": "B", "text": "同儕朋友"},
+      {"key": "C", "text": "生成式AI（如ChatGPT）"},
+      {"key": "D", "text": "心理諮商師"}
+    ],
+    "answer": "C",
+    "explanation": "根據2025年兒福聯盟調查，台灣青少年有心理困擾時，46.5%曾向生成式AI（如ChatGPT）求助，比例高於輔導室（41.1%）。這反映AI工具在青少年心理支持中的新角色，也帶來「AI諮商」的倫理議題：需要教導青少年辨別AI給予的情緒支持的限制，同時不阻斷其求助意願。",
+    "difficulty": 3,
+    "tags": "青少年心理健康,AI,生成式AI,輔導"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2025,
+    "source": "青少年健康新知",
+    "stem": "WHO的ICD-11（2022年生效）正式將哪項列為診斷疾病，使其成為可被正式診斷的心理健康問題？",
+    "options": [
+      {"key": "A", "text": "網路購物成癮（Compulsive Buying Disorder）"},
+      {"key": "B", "text": "遊戲疾患（Gaming Disorder）"},
+      {"key": "C", "text": "手機依賴症（Smartphone Addiction）"},
+      {"key": "D", "text": "社群媒體成癮（Social Media Addiction）"}
+    ],
+    "answer": "B",
+    "explanation": "WHO的ICD-11（2022年正式生效）首度將「遊戲疾患（Gaming Disorder）」列為正式診斷疾病，診斷標準包含：對遊戲的控制能力受損、遊戲優先於其他活動、儘管有負面後果仍持續遊戲，且症狀持續12個月以上。DSM-5將「網路遊戲疾患（Internet Gaming Disorder）」列為需進一步研究的狀況（尚未正式納入診斷）。台灣國衛院調查顯示約3.1%青少年有網路遊戲沉迷問題。",
+    "difficulty": 2,
+    "tags": "遊戲疾患,ICD-11,網路成癮,青少年健康"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2025,
+    "source": "長照新制",
+    "stem": "台灣長照3.0計畫於2026年起實施，其三大核心願景不包含下列何者？",
+    "options": [
+      {"key": "A", "text": "健康老化"},
+      {"key": "B", "text": "在地安老"},
+      {"key": "C", "text": "安寧善終"},
+      {"key": "D", "text": "機構安養"}
+    ],
+    "answer": "D",
+    "explanation": "長照3.0（2026年起實施）的三大核心願景為：①健康老化（促進老年人健康自立）、②在地安老（讓長者在熟悉的社區與家庭中老化）、③安寧善終（提供生命末期的善終照護）。長照政策強調「去機構化」，優先支持居家和社區式照護，而非鼓勵機構安養。長照2.0（2017年起）長照ABC據點已達15,051處，長照3.0進一步整合醫療與照顧的連續服務。",
+    "difficulty": 2,
+    "tags": "長照3.0,高齡化,長期照護,在地安老"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2025,
+    "source": "傳染病防治新知",
+    "stem": "登革熱防治口訣「巡、倒、清、刷」中，「刷」指的是什麼？",
+    "options": [
+      {"key": "A", "text": "刷牙保持口腔衛生，避免病菌感染"},
+      {"key": "B", "text": "刷洗積水容器內壁，清除蚊卵"},
+      {"key": "C", "text": "用刷子清掃落葉，減少蚊蟲棲息地"},
+      {"key": "D", "text": "用毛刷塗抹防蚊液於皮膚上"}
+    ],
+    "answer": "B",
+    "explanation": "登革熱防治口訣「巡、倒、清、刷」：①巡：定期巡視家內外可能積水容器；②倒：倒除積水、不讓積水存留；③清：清除不需要的容器；④刷：刷洗容器內壁，清除埃及斑蚊和白線斑蚊的蚊卵。蚊卵附著力強，僅倒水不足以去除，必須刷洗才能有效清除。台灣2024年登革熱境外移入155例，創8年同期新高，主要來源為印尼（77例）。",
+    "difficulty": 1,
+    "tags": "登革熱,傳染病,防治,斑蚊"
+  },
+  {
+    "category_code": "curriculum108",
+    "q_type": "single",
+    "year": 2025,
+    "source": "精準健康新知",
+    "stem": "「精準健康（Precision Health）」相較於傳統醫療的最大進步，是將重心從何處轉移？",
+    "options": [
+      {"key": "A", "text": "從西方醫學轉移至傳統中醫"},
+      {"key": "B", "text": "從治療疾病轉移至預測、預防與個人化健康管理"},
+      {"key": "C", "text": "從公共衛生轉移至個人責任"},
+      {"key": "D", "text": "從醫院診療轉移至居家護理"}
+    ],
+    "answer": "B",
+    "explanation": "精準健康（Precision Health）涵蓋精準醫療，延伸至疾病預防與健康促進，以「預測→預防→診斷→治療→照護」的連續模式取代傳統「生病才就醫」模式。台灣行政院以2030年為願景，布建「全齡精準健康」生態系，結合基因體學、大數據與AI，提供個人化的疾病預測與預防策略。中研院主導的TPMI台灣精準醫療計畫，聯合16家醫療體系建立亞洲最大漢人生醫大數據庫。",
+    "difficulty": 2,
+    "tags": "精準健康,AI醫療,預防醫學,新興議題"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2025,
+    "source": "心理健康新知",
+    "stem": "台灣衛福部國民健康署推動的「全民心理健康韌性計畫（2025-2030）」，其三大核心策略不包含下列何者？",
+    "options": [
+      {"key": "A", "text": "預防（Prevention）"},
+      {"key": "B", "text": "去污名（De-stigmatization）"},
+      {"key": "C", "text": "識能（Literacy）"},
+      {"key": "D", "text": "強制就醫（Compulsory Treatment）"}
+    ],
+    "answer": "D",
+    "explanation": "國健署「全民心理健康韌性計畫（2025-2030）」的三大核心策略為：①預防（Prevention）：推廣心理健康促進，在問題發生前介入；②識能（Literacy）：提升全民心理健康識能，增進對心理問題的認識；③去污名（De-stigmatization）：減少對心理疾病的標籤與偏見，鼓勵主動求助。此計畫強調自願性的心理健康促進，而非強制性措施。",
+    "difficulty": 2,
+    "tags": "心理健康,去污名,韌性,衛福部"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2024,
+    "source": "青少年睡眠健康",
+    "stem": "美國國家睡眠基金會（NSF）建議青少年（14-17歲）每天的睡眠時數為何？",
+    "options": [
+      {"key": "A", "text": "6-8小時"},
+      {"key": "B", "text": "7-9小時"},
+      {"key": "C", "text": "8-10小時"},
+      {"key": "D", "text": "9-11小時"}
+    ],
+    "answer": "C",
+    "explanation": "NSF建議各年齡層睡眠時數：學齡兒童（6-13歲）9-11小時、青少年（14-17歲）8-10小時、成人（18-64歲）7-9小時、長者（65歲以上）7-8小時。台灣調查顯示青少年平日睡眠不足（未達建議量）比率達58.3%，近47.9%有慢性睡眠不足問題。青少年因生理時鐘延後（Delayed Sleep Phase），偏向晚睡晚起，是學校需要重視的健康議題。",
+    "difficulty": 2,
+    "tags": "睡眠健康,青少年,NSF,生理時鐘"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "multiple",
+    "year": 2025,
+    "source": "食品標示法規",
+    "stem": "依台灣現行「食品安全衛生管理法」規定，下列哪些項目是包裝食品「必須」標示的內容？（複選）",
+    "options": [
+      {"key": "A", "text": "品名與內容物"},
+      {"key": "B", "text": "有效日期"},
+      {"key": "C", "text": "製造商名稱、電話及地址"},
+      {"key": "D", "text": "產品得獎記錄"},
+      {"key": "E", "text": "營養標示"}
+    ],
+    "answer": "A,B,C,E",
+    "explanation": "依食品安全衛生管理法第22條，包裝食品必須標示：①品名、②內容物名稱及重量/容量/數量、③食品添加物名稱、④製造廠商名稱/電話/地址（輸入品標原產地）、⑤有效日期、⑥營養標示、⑦含基因改造食品原料說明、⑧其他經中央主管機關公告事項。產品得獎記錄為自願性標示，非強制要求。此外，2025年起嬰兒食品不得標示「優於母乳」等誇大字樣。",
+    "difficulty": 3,
+    "tags": "食品標示,食安法,食品安全,法規"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2025,
+    "source": "校園霸凌防治",
+    "stem": "依台灣「教育部校園霸凌防制準則」，霸凌行為的四大要素不包含下列何者？",
+    "options": [
+      {"key": "A", "text": "重複性（反覆發生）"},
+      {"key": "B", "text": "傷害性（對被霸凌者造成身心傷害）"},
+      {"key": "C", "text": "偶發性（偶爾發生一次）"},
+      {"key": "D", "text": "力量不平衡（欺凌者具有優勢）"}
+    ],
+    "answer": "C",
+    "explanation": "霸凌行為的四大要素為：①重複性（非偶發，反覆持續發生）、②傷害性（對被霸凌者造成生理或心理傷害）、③故意性（欺凌者有意圖造成傷害）、④力量不平衡（欺凌者在體力、人數、社交地位等方面具有優勢）。「偶發性」是霸凌的反面特徵——單次偶發的衝突通常不構成霸凌。2024年兒福聯盟調查顯示，台灣近一年遭霸凌比率10.2%，言語霸凌（64.9%）最常見。",
+    "difficulty": 2,
+    "tags": "校園霸凌,防制準則,青少年健康,輔導"
+  }
+]

@@ -1,0 +1,162 @@
+{% extends "base.html" %}
+{% block title %}Day {{ plan.day_number }} - {{ plan.title }}{% endblock %}
+{% block page_title %}Day {{ plan.day_number }}{% endblock %}
+
+{% block header_actions %}
+<a href="{{ url_for('plan') }}" class="btn btn-outline-light btn-sm">
+  <i class="bi bi-arrow-left"></i>
+</a>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid px-3 py-3">
+
+  <!-- 計劃標題 -->
+  <div class="card border-0 shadow-sm mb-3 {% if plan.is_review_day %}bg-warning-subtle{% else %}bg-primary-subtle{% endif %}">
+    <div class="card-body">
+      <div class="d-flex align-items-start">
+        <div class="plan-day-badge me-3 {% if plan.is_review_day %}bg-warning{% else %}bg-primary{% endif %}">
+          Day {{ plan.day_number }}
+        </div>
+        <div>
+          <h5 class="mb-1 fw-bold">{{ plan.title }}</h5>
+          {% if plan.plan_date %}
+          <div class="text-muted small">{{ plan.plan_date.strftime('%Y年%m月%d日') }}</div>
+          {% endif %}
+          {% if plan.is_review_day %}
+          <span class="badge bg-warning text-dark mt-1"><i class="bi bi-arrow-repeat me-1"></i>複習日</span>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 進度 -->
+  <div class="card border-0 shadow-sm mb-3">
+    <div class="card-body">
+      <div class="d-flex justify-content-between mb-2">
+        <span class="fw-semibold">今日進度</span>
+        <span class="text-muted">{{ done_count }} / {{ plan.target_questions }} 題</span>
+      </div>
+      <div class="progress mb-2" style="height:10px;">
+        <div class="progress-bar bg-primary"
+             style="width:{{ [done_count / plan.target_questions * 100, 100]|min|int if plan.target_questions > 0 else 0 }}%">
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-4">
+          <div class="fw-bold text-primary">{{ done_count }}</div>
+          <small class="text-muted">已作答</small>
+        </div>
+        <div class="col-4">
+          <div class="fw-bold text-success">{{ correct_count }}</div>
+          <small class="text-muted">答對</small>
+        </div>
+        <div class="col-4">
+          <div class="fw-bold text-info">
+            {% if done_count > 0 %}{{ (correct_count / done_count * 100)|int }}%{% else %}--{% endif %}
+          </div>
+          <small class="text-muted">正確率</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 重點標籤 -->
+  {% if tags %}
+  <div class="mb-3">
+    <div class="fw-semibold mb-2">今日重點</div>
+    <div class="d-flex flex-wrap gap-2">
+      {% for tag in tags %}
+      <a href="{{ url_for('practice', tags_filter=tag, day=plan.day_number) }}"
+         class="badge bg-primary-subtle text-primary text-decoration-none px-3 py-2 tag-pill">
+        {{ tag }}
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- 快速開始 -->
+  <div class="d-grid gap-2 mb-3">
+    <a href="{{ url_for('practice', day=plan.day_number) }}"
+       class="btn btn-primary btn-lg touch-btn">
+      <i class="bi bi-pencil-square me-2"></i>開始今日練習
+    </a>
+    {% if plan.is_review_day %}
+    <a href="{{ url_for('review') }}" class="btn btn-warning btn-lg touch-btn">
+      <i class="bi bi-arrow-repeat me-2"></i>錯題複習模式
+    </a>
+    {% endif %}
+  </div>
+
+  <!-- 相關題目預覽 -->
+  {% if related_questions %}
+  <div class="mb-3">
+    <div class="fw-semibold mb-2">相關題目預覽</div>
+    {% for q in related_questions %}
+    <div class="card border-0 shadow-sm mb-2">
+      <div class="card-body py-2 px-3">
+        <div class="d-flex align-items-start">
+          <span class="badge {% if q.difficulty == 1 %}bg-success{% elif q.difficulty == 3 %}bg-danger{% else %}bg-warning text-dark{% endif %} me-2 mt-1 flex-shrink-0">
+            {{ q.year or '---' }}
+          </span>
+          <div class="text-truncate">{{ q.stem }}</div>
+          <a href="{{ url_for('question_detail', qid=q.id) }}" class="ms-2 text-muted flex-shrink-0">
+            <i class="bi bi-eye"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <!-- 備註 -->
+  <div class="card border-0 shadow-sm">
+    <div class="card-body">
+      <div class="fw-semibold mb-2">備註</div>
+      <div id="notesDisplay" class="text-muted small">
+        {{ plan.notes if plan.notes else '點此新增備註...' }}
+      </div>
+      <textarea id="notesInput" class="form-control mt-2 d-none" rows="3"
+                placeholder="輸入今日備註...">{{ plan.notes }}</textarea>
+      <div class="d-flex gap-2 mt-2">
+        <button id="editNotesBtn" class="btn btn-sm btn-outline-secondary" onclick="toggleNotes()">
+          <i class="bi bi-pencil me-1"></i>編輯
+        </button>
+        <button id="saveNotesBtn" class="btn btn-sm btn-primary d-none" onclick="saveNotes({{ plan.day_number }})">
+          儲存
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function toggleNotes() {
+  document.getElementById('notesDisplay').classList.add('d-none');
+  document.getElementById('notesInput').classList.remove('d-none');
+  document.getElementById('editNotesBtn').classList.add('d-none');
+  document.getElementById('saveNotesBtn').classList.remove('d-none');
+}
+async function saveNotes(day) {
+  const notes = document.getElementById('notesInput').value;
+  const r = await fetch(`/api/plan/${day}/adjust`, {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({notes})
+  });
+  if (r.ok) {
+    document.getElementById('notesDisplay').textContent = notes || '點此新增備註...';
+    document.getElementById('notesDisplay').classList.remove('d-none');
+    document.getElementById('notesInput').classList.add('d-none');
+    document.getElementById('editNotesBtn').classList.remove('d-none');
+    document.getElementById('saveNotesBtn').classList.add('d-none');
+  }
+}
+</script>
+{% endblock %}

@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+{% block title %}今日儀表板 - 健護甄試{% endblock %}
+{% block page_title %}健護甄試複習{% endblock %}
+
+{% block content %}
+<div class="container-fluid px-3 py-3">
+
+  <!-- 今日計劃 Banner -->
+  {% if today_plan %}
+  <div class="card border-0 shadow-sm mb-3 plan-banner">
+    <div class="card-body py-3">
+      <div class="d-flex align-items-center">
+        <div class="plan-day-badge me-3">Day {{ today_plan.day_number }}</div>
+        <div>
+          <div class="fw-bold text-white">{{ today_plan.title }}</div>
+          <small class="text-white-50">目標 {{ today_plan.target_questions }} 題</small>
+        </div>
+        <a href="{{ url_for('plan_day', day=today_plan.day_number) }}" class="btn btn-light btn-sm ms-auto">
+          查看 <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  {% elif not plan_started %}
+  <div class="card border-0 shadow-sm mb-3 bg-light">
+    <div class="card-body text-center py-3">
+      <i class="bi bi-calendar-plus text-primary fs-2 d-block mb-2"></i>
+      <p class="mb-2 text-muted">尚未設定讀書計劃開始日期</p>
+      <a href="{{ url_for('plan') }}" class="btn btn-primary btn-sm">
+        <i class="bi bi-calendar3 me-1"></i>前往設定30天計劃
+      </a>
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- 今日進度 -->
+  <div class="row g-3 mb-3">
+    <div class="col-6">
+      <div class="stat-card card border-0 shadow-sm h-100">
+        <div class="card-body text-center py-3">
+          <div class="stat-number text-primary">{{ today_done }}</div>
+          <div class="stat-label">今日作答</div>
+          {% if today_plan %}
+          <div class="progress mt-2" style="height:6px;">
+            <div class="progress-bar bg-primary" style="width:{{ [today_done / today_plan.target_questions * 100, 100]|min|int }}%"></div>
+          </div>
+          <small class="text-muted">/ {{ today_plan.target_questions }} 題</small>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="stat-card card border-0 shadow-sm h-100">
+        <div class="card-body text-center py-3">
+          <div class="stat-number text-success">
+            {% if today_done > 0 %}{{ (today_correct / today_done * 100)|int }}%{% else %}--{% endif %}
+          </div>
+          <div class="stat-label">今日正確率</div>
+          <small class="text-muted">{{ today_correct }} / {{ today_done }} 題</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 連續學習 + 待複習 -->
+  <div class="row g-3 mb-3">
+    <div class="col-6">
+      <div class="stat-card card border-0 shadow-sm h-100">
+        <div class="card-body text-center py-3">
+          <div class="stat-number text-warning">{{ stats.streak_days }}</div>
+          <div class="stat-label">連續學習天</div>
+          <small class="text-muted"><i class="bi bi-fire text-danger"></i> Streak</small>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="stat-card card border-0 shadow-sm h-100">
+        <div class="card-body text-center py-3">
+          <div class="stat-number text-danger">{{ pending_review }}</div>
+          <div class="stat-label">待複習錯題</div>
+          {% if pending_review > 0 %}
+          <a href="{{ url_for('review') }}" class="btn btn-outline-danger btn-sm mt-1">去複習</a>
+          {% else %}
+          <small class="text-muted">全部完成！</small>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 快速入口 -->
+  <h6 class="fw-bold text-muted mb-2 px-1">快速開始</h6>
+  <div class="row g-2 mb-3">
+    <div class="col-6">
+      <a href="{{ url_for('practice') }}" class="quick-btn card border-0 shadow-sm text-decoration-none">
+        <div class="card-body text-center py-3">
+          <i class="bi bi-pencil-square fs-2 text-primary d-block mb-1"></i>
+          <div class="fw-semibold">開始練習</div>
+          <small class="text-muted">隨機出題</small>
+        </div>
+      </a>
+    </div>
+    <div class="col-6">
+      <a href="{{ url_for('review') }}" class="quick-btn card border-0 shadow-sm text-decoration-none">
+        <div class="card-body text-center py-3">
+          <i class="bi bi-arrow-repeat fs-2 text-danger d-block mb-1"></i>
+          <div class="fw-semibold">錯題複習</div>
+          <small class="text-muted">間隔複習</small>
+        </div>
+      </a>
+    </div>
+    <div class="col-6">
+      <a href="{{ url_for('oral') }}" class="quick-btn card border-0 shadow-sm text-decoration-none">
+        <div class="card-body text-center py-3">
+          <i class="bi bi-mic-fill fs-2 text-success d-block mb-1"></i>
+          <div class="fw-semibold">口試模擬</div>
+          <small class="text-muted">申論題練習</small>
+        </div>
+      </a>
+    </div>
+    <div class="col-6">
+      <a href="{{ url_for('dashboard') }}" class="quick-btn card border-0 shadow-sm text-decoration-none">
+        <div class="card-body text-center py-3">
+          <i class="bi bi-bar-chart-fill fs-2 text-info d-block mb-1"></i>
+          <div class="fw-semibold">進度圖表</div>
+          <small class="text-muted">學習統計</small>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- 累計統計 -->
+  <div class="card border-0 shadow-sm mb-3">
+    <div class="card-body">
+      <h6 class="fw-bold mb-3"><i class="bi bi-trophy-fill text-warning me-1"></i>累計統計</h6>
+      <div class="row text-center g-2">
+        <div class="col-4">
+          <div class="fw-bold text-primary fs-5">{{ total_answers }}</div>
+          <small class="text-muted">總作答</small>
+        </div>
+        <div class="col-4">
+          <div class="fw-bold text-success fs-5">{{ total_correct }}</div>
+          <small class="text-muted">答對</small>
+        </div>
+        <div class="col-4">
+          <div class="fw-bold text-info fs-5">
+            {% if total_answers > 0 %}{{ (total_correct / total_answers * 100)|int }}%{% else %}--{% endif %}
+          </div>
+          <small class="text-muted">正確率</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endblock %}

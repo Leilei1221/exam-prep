@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% block title %}30天讀書計劃{% endblock %}
+{% block page_title %}30天讀書計劃{% endblock %}
+
+{% block header_actions %}
+<a href="{{ url_for('questions') }}" class="btn btn-outline-light btn-sm">
+  <i class="bi bi-book"></i>
+</a>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid px-3 py-3">
+
+  {% if not plan_started %}
+  <!-- 設定開始日期 -->
+  <div class="card border-0 shadow-sm mb-4">
+    <div class="card-body">
+      <h6 class="fw-bold mb-3"><i class="bi bi-calendar-plus text-primary me-2"></i>設定讀書計劃開始日期</h6>
+      <form action="{{ url_for('set_plan_start') }}" method="POST" class="d-flex gap-2">
+        <input type="date" name="start_date" class="form-control"
+               value="{{ today.isoformat() }}" required>
+        <button type="submit" class="btn btn-primary px-4">開始</button>
+      </form>
+      <small class="text-muted mt-2 d-block">設定後，系統將自動安排30天課表日期。</small>
+    </div>
+  </div>
+  {% else %}
+  <!-- 顯示當前進度 -->
+  {% if today_plan %}
+  <div class="card border-0 shadow-sm mb-3 plan-banner">
+    <div class="card-body py-2">
+      <div class="d-flex align-items-center">
+        <span class="plan-day-badge me-2">Day {{ today_plan.day_number }}</span>
+        <span class="text-white fw-semibold">{{ today_plan.title }}</span>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  {% endif %}
+
+  <!-- 週次標題 + 計劃列表 -->
+  {% set week_names = ['第1週：生理學與護理基礎', '第2週：健康教育學科知識', '第3週：108課綱教學法', '第4週：模擬衝刺'] %}
+
+  {% for week_idx in range(4) %}
+  {% set week_start = week_idx * 7 + 1 %}
+  {% set week_end = week_start + 6 %}
+
+  <div class="mb-3">
+    <div class="week-header d-flex align-items-center px-1 mb-2">
+      <span class="badge bg-primary me-2">第{{ week_idx+1 }}週</span>
+      <small class="text-muted fw-semibold">{{ week_names[week_idx] }}</small>
+    </div>
+
+    <div class="row g-2">
+      {% for plan in plans %}
+      {% if plan.day_number >= week_start and plan.day_number <= week_end %}
+      {% set done = progress.get(plan.day_number, 0) %}
+      {% set is_today = today_plan and today_plan.day_number == plan.day_number %}
+      {% set is_past = plan.plan_date and plan.plan_date < today %}
+      {% set pct = [done / plan.target_questions * 100, 100]|min|int if plan.target_questions > 0 else 0 %}
+
+      <div class="col-12">
+        <a href="{{ url_for('plan_day', day=plan.day_number) }}"
+           class="plan-item card border-0 shadow-sm text-decoration-none
+                  {% if is_today %}plan-item-today{% endif %}
+                  {% if plan.is_completed %}plan-item-done{% endif %}
+                  {% if plan.is_review_day %}plan-item-review{% endif %}">
+          <div class="card-body py-2 px-3">
+            <div class="d-flex align-items-center">
+              <!-- Day badge -->
+              <div class="plan-day-num {% if is_today %}bg-primary{% elif plan.is_completed %}bg-success{% elif plan.is_review_day %}bg-warning{% else %}bg-secondary{% endif %} text-white me-3">
+                {{ plan.day_number }}
+              </div>
+              <!-- 主內容 -->
+              <div class="flex-grow-1 min-w-0">
+                <div class="fw-semibold text-truncate {% if is_today %}text-primary{% endif %}">
+                  {% if plan.is_review_day %}<i class="bi bi-arrow-repeat text-warning me-1"></i>{% endif %}
+                  {{ plan.title }}
+                </div>
+                <div class="d-flex align-items-center gap-2 mt-1">
+                  {% if plan.plan_date %}
+                  <small class="text-muted">{{ plan.plan_date.strftime('%m/%d') }}</small>
+                  {% endif %}
+                  <small class="text-muted">目標{{ plan.target_questions }}題</small>
+                  {% if done > 0 %}
+                  <span class="badge bg-success-subtle text-success">已做{{ done }}題</span>
+                  {% endif %}
+                </div>
+                {% if plan.plan_date %}
+                <div class="progress mt-1" style="height:4px;">
+                  <div class="progress-bar {% if plan.is_completed %}bg-success{% else %}bg-primary{% endif %}"
+                       style="width:{{ pct }}%"></div>
+                </div>
+                {% endif %}
+              </div>
+              <!-- 完成勾 -->
+              {% if plan.is_completed %}
+              <i class="bi bi-check-circle-fill text-success ms-2 fs-5"></i>
+              {% elif is_today %}
+              <i class="bi bi-play-circle-fill text-primary ms-2 fs-5"></i>
+              {% else %}
+              <i class="bi bi-chevron-right text-muted ms-2"></i>
+              {% endif %}
+            </div>
+          </div>
+        </a>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+
+</div>
+{% endblock %}

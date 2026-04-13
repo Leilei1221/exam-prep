@@ -1,0 +1,181 @@
+{% extends "base.html" %}
+{% block title %}口試模擬{% endblock %}
+{% block page_title %}口試模擬{% endblock %}
+
+{% block header_actions %}
+<select class="form-select form-select-sm w-auto" onchange="changeCat(this.value)">
+  <option value="">全部</option>
+  {% for cat in categories %}
+  <option value="{{ cat.id }}" {% if category_id == cat.id %}selected{% endif %}>{{ cat.name }}</option>
+  {% endfor %}
+</select>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid px-3 py-3">
+
+  {% if question %}
+  <!-- 倒數計時器 -->
+  <div class="text-center mb-3">
+    <div class="timer-ring-container mx-auto" style="width:140px;height:140px;">
+      <canvas id="timerCanvas" width="140" height="140"></canvas>
+      <div class="timer-display" id="timerDisplay">3:00</div>
+    </div>
+    <div class="d-flex gap-2 justify-content-center mt-2">
+      <button class="btn btn-success touch-btn px-4" id="startBtn" onclick="startTimer()">
+        <i class="bi bi-play-fill me-1"></i>開始計時
+      </button>
+      <button class="btn btn-outline-secondary touch-btn px-3" onclick="resetTimer()" id="resetBtn">
+        <i class="bi bi-arrow-counterclockwise"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- 題目 -->
+  <div class="card border-0 shadow-sm mb-3">
+    <div class="card-body">
+      <div class="d-flex align-items-center gap-2 mb-3">
+        <span class="badge bg-success">申論題</span>
+        {% if question.year %}
+        <span class="badge bg-secondary">{{ question.year }}年</span>
+        {% endif %}
+        {% if question.category %}
+        <span class="badge bg-info-subtle text-info">{{ question.category.name }}</span>
+        {% endif %}
+        {% if question.source %}
+        <small class="text-muted ms-auto">{{ question.source }}</small>
+        {% endif %}
+      </div>
+      <p class="question-stem fs-6">{{ question.stem }}</p>
+      {% if question.tags %}
+      <div>
+        {% for tag in question.tags.split(',') %}
+        <span class="badge bg-light text-secondary me-1">{{ tag.strip() }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- 答題要點（折疊） -->
+  <div class="card border-0 shadow-sm mb-3">
+    <div class="card-header bg-white border-0 py-2">
+      <button class="btn btn-link text-decoration-none fw-semibold p-0 w-100 text-start"
+              type="button" data-bs-toggle="collapse" data-bs-target="#keyPointsCollapse">
+        <i class="bi bi-list-check me-2 text-success"></i>展開答題要點
+        <i class="bi bi-chevron-down ms-auto float-end"></i>
+      </button>
+    </div>
+    <div class="collapse" id="keyPointsCollapse">
+      <div class="card-body pt-0">
+        {% if key_points %}
+        <ol class="mb-0 ps-3">
+          {% for point in key_points %}
+          <li class="mb-2 key-point-item">
+            <span id="kp-check-{{ loop.index }}" class="d-inline-block me-1"></span>
+            {{ point }}
+            <button class="btn btn-sm btn-outline-success ms-1 py-0 px-1"
+                    onclick="checkPoint({{ loop.index }})">✓</button>
+          </li>
+          {% endfor %}
+        </ol>
+        <div class="mt-2">
+          <div class="progress" style="height:6px;">
+            <div class="progress-bar bg-success" id="pointsProgress" style="width:0%"></div>
+          </div>
+          <small class="text-muted" id="pointsProgressText">0 / {{ key_points|length }} 要點</small>
+        </div>
+        {% else %}
+        <p class="text-muted">本題無預設答題要點</p>
+        {% endif %}
+        {% if question.explanation %}
+        <div class="mt-3 pt-3 border-top">
+          <div class="fw-semibold mb-1">解題說明</div>
+          <p class="text-muted small mb-0">{{ question.explanation }}</p>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <!-- 自我評分 -->
+  <div class="card border-0 shadow-sm mb-3">
+    <div class="card-body">
+      <div class="fw-semibold mb-2">自我評分</div>
+      <div class="d-flex gap-2 flex-wrap">
+        {% for score in [1, 2, 3, 4, 5] %}
+        <button class="btn btn-outline-primary score-btn touch-btn" onclick="ratePerformance({{ score }})">
+          {{ '⭐' * score }}
+        </button>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <!-- 換一題 -->
+  <div class="d-grid gap-2 mb-3">
+    <button class="btn btn-primary btn-lg touch-btn" onclick="nextOralQuestion()">
+      <i class="bi bi-arrow-right me-1"></i>換一題
+    </button>
+  </div>
+
+  <input type="hidden" id="oralQuestionId" value="{{ question.id }}">
+  <input type="hidden" id="totalKeyPoints" value="{{ key_points|length }}">
+  <input type="hidden" id="currentCatId" value="{{ category_id or '' }}">
+
+  {% else %}
+  <div class="text-center py-5">
+    <i class="bi bi-mic-mute fs-1 text-muted d-block mb-3"></i>
+    <h5 class="text-muted">目前沒有申論題</h5>
+    <p class="text-muted">請前往匯入申論題型題目</p>
+    <a href="{{ url_for('admin_import') }}" class="btn btn-primary">匯入題庫</a>
+  </div>
+  {% endif %}
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/oral.js') }}"></script>
+<script>
+function changeCat(val) {
+  const url = val ? `/oral?category_id=${val}` : '/oral';
+  window.location.href = url;
+}
+
+let checkedPoints = new Set();
+const totalPoints = parseInt(document.getElementById('totalKeyPoints')?.value || '0');
+
+function checkPoint(idx) {
+  checkedPoints.add(idx);
+  document.getElementById(`kp-check-${idx}`).innerHTML = '<i class="bi bi-check-circle-fill text-success"></i>';
+  updatePointsProgress();
+}
+
+function updatePointsProgress() {
+  const pct = totalPoints > 0 ? (checkedPoints.size / totalPoints * 100) : 0;
+  document.getElementById('pointsProgress').style.width = pct + '%';
+  document.getElementById('pointsProgressText').textContent = `${checkedPoints.size} / ${totalPoints} 要點`;
+}
+
+function ratePerformance(score) {
+  document.querySelectorAll('.score-btn').forEach((btn, i) => {
+    btn.classList.toggle('btn-primary', i < score);
+    btn.classList.toggle('btn-outline-primary', i >= score);
+  });
+  // Record the oral answer
+  const qid = document.getElementById('oralQuestionId').value;
+  fetch('/api/oral/answer', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({question_id: parseInt(qid)})
+  });
+}
+
+function nextOralQuestion() {
+  const catId = document.getElementById('currentCatId').value;
+  const url = catId ? `/oral?category_id=${catId}` : '/oral';
+  window.location.href = url;
+}
+</script>
+{% endblock %}

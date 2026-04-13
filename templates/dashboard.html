@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+{% block title %}進度儀表板{% endblock %}
+{% block page_title %}進度儀表板{% endblock %}
+
+{% block head %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid px-3 py-3">
+
+  <!-- 核心指標 -->
+  <div class="row g-2 mb-3">
+    <div class="col-3">
+      <div class="stat-card card border-0 shadow-sm text-center">
+        <div class="card-body py-2 px-1">
+          <div class="fw-bold text-primary">{{ total_answers }}</div>
+          <small class="text-muted" style="font-size:.7rem">總作答</small>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="stat-card card border-0 shadow-sm text-center">
+        <div class="card-body py-2 px-1">
+          <div class="fw-bold text-success">{{ (accuracy * 100)|int }}%</div>
+          <small class="text-muted" style="font-size:.7rem">正確率</small>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="stat-card card border-0 shadow-sm text-center">
+        <div class="card-body py-2 px-1">
+          <div class="fw-bold text-warning">{{ streak }}</div>
+          <small class="text-muted" style="font-size:.7rem">連續天</small>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="stat-card card border-0 shadow-sm text-center">
+        <div class="card-body py-2 px-1">
+          <div class="fw-bold text-info">{{ total_minutes }}</div>
+          <small class="text-muted" style="font-size:.7rem">學習分鐘</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 近7天作答量 -->
+  <div class="card border-0 shadow-sm mb-3">
+    <div class="card-body">
+      <h6 class="fw-bold mb-3">近7天作答量</h6>
+      <canvas id="weekChart" height="120"></canvas>
+    </div>
+  </div>
+
+  <!-- 錯題概況 -->
+  <div class="card border-0 shadow-sm mb-3">
+    <div class="card-body">
+      <h6 class="fw-bold mb-3">錯題概況</h6>
+      <div class="row text-center g-2">
+        <div class="col-6">
+          <div class="fs-4 fw-bold text-danger">{{ wrong_pending }}</div>
+          <div class="text-muted small">待複習</div>
+          <a href="{{ url_for('review') }}" class="btn btn-sm btn-outline-danger mt-1">去複習</a>
+        </div>
+        <div class="col-6">
+          <div class="fs-4 fw-bold text-success">{{ wrong_mastered }}</div>
+          <div class="text-muted small">已熟悉</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 各分類正確率 -->
+  <div class="card border-0 shadow-sm mb-3">
+    <div class="card-body">
+      <h6 class="fw-bold mb-3">各分類正確率</h6>
+      {% for cs in cat_stats %}
+      <div class="mb-3">
+        <div class="d-flex justify-content-between mb-1">
+          <small class="fw-semibold">{{ cs.name }}</small>
+          <small class="text-muted">{{ cs.total }}題 · {{ cs.accuracy }}%</small>
+        </div>
+        <div class="progress" style="height:8px;">
+          <div class="progress-bar {% if cs.accuracy >= 80 %}bg-success{% elif cs.accuracy >= 60 %}bg-warning{% else %}bg-danger{% endif %}"
+               style="width:{{ cs.accuracy }}%"></div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- 30天計劃進度 -->
+  <div class="card border-0 shadow-sm mb-3">
+    <div class="card-body">
+      <h6 class="fw-bold mb-2">30天計劃進度</h6>
+      <div class="d-flex justify-content-between mb-1">
+        <span>已完成 {{ plans_done }} 天</span>
+        <span class="text-muted">30天</span>
+      </div>
+      <div class="progress mb-2" style="height:10px;">
+        <div class="progress-bar bg-primary"
+             style="width:{{ (plans_done / 30 * 100)|int }}%"></div>
+      </div>
+      {% if current_day %}
+      <small class="text-muted">目前進度：Day {{ current_day.day_number }} · {{ current_day.title }}</small>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- 題庫統計 -->
+  <div class="card border-0 shadow-sm mb-3">
+    <div class="card-body">
+      <h6 class="fw-bold mb-3">各分類題庫統計</h6>
+      <canvas id="catChart" height="140"></canvas>
+    </div>
+  </div>
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+<script>
+const last7Data = {{ last7 | tojson }};
+const catData = {{ cat_stats | tojson }};
+initCharts(last7Data, catData);
+</script>
+{% endblock %}

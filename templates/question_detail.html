@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+{% block title %}題目詳情{% endblock %}
+{% block page_title %}題目詳情{% endblock %}
+
+{% block header_actions %}
+<a href="{{ url_for('questions') }}" class="btn btn-outline-light btn-sm">
+  <i class="bi bi-arrow-left"></i>
+</a>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid px-3 py-3">
+
+  <!-- 題目 Meta -->
+  <div class="card border-0 shadow-sm mb-3">
+    <div class="card-body">
+      <div class="d-flex flex-wrap gap-2 mb-3">
+        <span class="badge bg-{{ get_difficulty_color(q.difficulty) }} fs-6">
+          {{ get_difficulty_label(q.difficulty) }}
+        </span>
+        <span class="badge bg-secondary">
+          {% if q.q_type == 'single' %}單選題{% elif q.q_type == 'multiple' %}複選題{% else %}申論題{% endif %}
+        </span>
+        {% if q.year %}
+        <span class="badge bg-light text-dark">{{ q.year }}年</span>
+        {% endif %}
+        {% if q.source %}
+        <span class="badge bg-info-subtle text-info">{{ q.source }}</span>
+        {% endif %}
+        {% if q.category %}
+        <span class="badge bg-primary-subtle text-primary">{{ q.category.name }}</span>
+        {% endif %}
+      </div>
+      <p class="question-stem">{{ q.stem }}</p>
+      {% if q.tags %}
+      <div class="mt-2">
+        {% for tag in q.tags.split(',') %}
+        <span class="badge bg-light text-secondary me-1">{{ tag.strip() }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- 選項 -->
+  {% if options %}
+  <div class="card border-0 shadow-sm mb-3">
+    <div class="card-body">
+      <h6 class="fw-bold mb-3">選項</h6>
+      {% for opt in options %}
+      <div class="option-display py-2 px-3 mb-2 rounded
+                  {% if opt.key in q.answer.split(',') %}option-correct{% endif %}">
+        <span class="fw-bold me-2">{{ opt.key }}</span>
+        {{ opt.text }}
+        {% if opt.key in q.answer.split(',') %}
+        <i class="bi bi-check-circle-fill text-success ms-2"></i>
+        {% endif %}
+      </div>
+      {% endfor %}
+      <div class="mt-2">
+        <span class="fw-semibold">正確答案：</span>
+        <span class="badge bg-success fs-6">{{ q.answer }}</span>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- 申論要點 -->
+  {% if key_points %}
+  <div class="card border-0 shadow-sm mb-3">
+    <div class="card-body">
+      <h6 class="fw-bold mb-3">答題要點</h6>
+      <ol class="mb-0 ps-3">
+        {% for point in key_points %}
+        <li class="mb-2">{{ point }}</li>
+        {% endfor %}
+      </ol>
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- 解析 -->
+  {% if q.explanation %}
+  <div class="card border-0 shadow-sm mb-3">
+    <div class="card-body">
+      <h6 class="fw-bold mb-2">解析</h6>
+      <p class="mb-0 text-muted">{{ q.explanation }}</p>
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- 錯題資訊 -->
+  {% if wq %}
+  <div class="card border-0 {% if wq.is_mastered %}border-success{% else %}border-danger{% endif %} shadow-sm mb-3">
+    <div class="card-body">
+      <div class="d-flex align-items-center">
+        <div>
+          <div class="fw-semibold {% if wq.is_mastered %}text-success{% else %}text-danger{% endif %}">
+            {% if wq.is_mastered %}
+            <i class="bi bi-check-circle-fill me-1"></i>已標記熟悉
+            {% else %}
+            <i class="bi bi-x-circle-fill me-1"></i>錯題（已錯 {{ wq.wrong_count }} 次）
+            {% endif %}
+          </div>
+          {% if wq.next_review_at and not wq.is_mastered %}
+          <small class="text-muted">下次複習：{{ wq.next_review_at.strftime('%Y/%m/%d') }}</small>
+          {% endif %}
+        </div>
+        {% if not wq.is_mastered %}
+        <button class="btn btn-sm btn-success ms-auto"
+                onclick="masterThis({{ wq.id }})">標記熟悉</button>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- 作答紀錄 -->
+  {% if answers %}
+  <div class="card border-0 shadow-sm mb-3">
+    <div class="card-body">
+      <h6 class="fw-bold mb-3">近期作答紀錄</h6>
+      {% for ans in answers %}
+      <div class="d-flex align-items-center py-1 border-bottom">
+        <i class="bi {% if ans.is_correct %}bi-check-circle-fill text-success{% else %}bi-x-circle-fill text-danger{% endif %} me-2"></i>
+        <span class="me-2">{{ ans.user_answer or '（未填）' }}</span>
+        <span class="badge bg-light text-secondary me-2">{{ ans.mode }}</span>
+        <small class="text-muted ms-auto">{{ ans.answered_at.strftime('%m/%d %H:%M') }}</small>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- 快速練習此題 -->
+  <div class="d-grid mb-3">
+    <a href="{{ url_for('practice', category_id=q.category_id) }}" class="btn btn-primary touch-btn">
+      <i class="bi bi-pencil-square me-1"></i>繼續練習同類題
+    </a>
+  </div>
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+async function masterThis(wqId) {
+  const r = await fetch(`/api/review/master/${wqId}`, {method: 'POST'});
+  if (r.ok) location.reload();
+}
+</script>
+{% endblock %}

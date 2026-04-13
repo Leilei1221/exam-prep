@@ -1,0 +1,154 @@
+{% extends "base.html" %}
+{% block title %}匯入題庫{% endblock %}
+{% block page_title %}匯入題庫{% endblock %}
+
+{% block header_actions %}
+<a href="{{ url_for('questions') }}" class="btn btn-outline-light btn-sm">
+  <i class="bi bi-book"></i>
+</a>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid px-3 py-3">
+
+  <!-- 結果 -->
+  {% if result %}
+  <div class="alert {% if result.errors %}alert-warning{% else %}alert-success{% endif %} mb-3">
+    <div class="fw-bold mb-1">
+      <i class="bi bi-check-circle me-1"></i>成功匯入 {{ result.imported }} 題
+    </div>
+    {% if result.errors %}
+    <hr>
+    <div class="small">
+      <div class="fw-semibold mb-1">錯誤：</div>
+      {% for err in result.errors %}
+      <div>• {{ err }}</div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  {% endif %}
+
+  <!-- 上傳表單 -->
+  <div class="card border-0 shadow-sm mb-3">
+    <div class="card-body">
+      <h6 class="fw-bold mb-3"><i class="bi bi-upload text-primary me-2"></i>上傳題庫檔案</h6>
+      <form method="POST" enctype="multipart/form-data">
+        <div class="mb-3">
+          <label class="form-label">選擇檔案（JSON 或 CSV）</label>
+          <input type="file" name="file" class="form-control touch-input" accept=".json,.csv" required>
+        </div>
+        <div class="d-grid">
+          <button type="submit" class="btn btn-primary touch-btn">
+            <i class="bi bi-cloud-upload me-1"></i>開始匯入
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- JSON 格式說明 -->
+  <div class="card border-0 shadow-sm mb-3">
+    <div class="card-header bg-white border-0 py-2">
+      <button class="btn btn-link text-decoration-none fw-semibold p-0 w-100 text-start"
+              type="button" data-bs-toggle="collapse" data-bs-target="#jsonFormat">
+        <i class="bi bi-code-slash text-success me-2"></i>JSON 格式說明
+      </button>
+    </div>
+    <div class="collapse" id="jsonFormat">
+      <div class="card-body pt-0">
+        <div class="mb-2">支援的 <code>category_code</code>：</div>
+        <ul class="mb-3">
+          {% for cat in categories %}
+          <li><code>{{ cat.code }}</code> — {{ cat.name }}</li>
+          {% endfor %}
+        </ul>
+        <div class="mb-2">JSON 格式（陣列或單筆物件）：</div>
+        <pre class="bg-light p-3 rounded small overflow-auto"><code>[
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "112年高中健護甄試",
+    "stem": "題目內容...",
+    "options": [
+      {"key": "A", "text": "選項A"},
+      {"key": "B", "text": "選項B"},
+      {"key": "C", "text": "選項C"},
+      {"key": "D", "text": "選項D"}
+    ],
+    "answer": "B",
+    "explanation": "詳細解析...",
+    "difficulty": 2,
+    "tags": "三段五級,預防醫學"
+  }
+]</code></pre>
+        <div class="mt-2 mb-1">申論題格式（essay）：</div>
+        <pre class="bg-light p-3 rounded small overflow-auto"><code>{
+  "category_code": "curriculum108",
+  "q_type": "essay",
+  "stem": "請說明...",
+  "options": [],
+  "answer": "essay",
+  "key_points": ["要點1", "要點2", "要點3"],
+  "explanation": "參考說明",
+  "difficulty": 3,
+  "tags": "口試,108課綱"
+}</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- CSV 格式說明 -->
+  <div class="card border-0 shadow-sm mb-3">
+    <div class="card-header bg-white border-0 py-2">
+      <button class="btn btn-link text-decoration-none fw-semibold p-0 w-100 text-start"
+              type="button" data-bs-toggle="collapse" data-bs-target="#csvFormat">
+        <i class="bi bi-table text-warning me-2"></i>CSV 格式說明
+      </button>
+    </div>
+    <div class="collapse" id="csvFormat">
+      <div class="card-body pt-0">
+        <p class="text-muted small mb-2">CSV 欄位（第一行為標題）：</p>
+        <div class="table-responsive">
+          <table class="table table-sm table-bordered small">
+            <thead class="table-light">
+              <tr>
+                <th>欄位</th><th>說明</th><th>範例</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>category_code</td><td>分類代碼</td><td>exam_senior</td></tr>
+              <tr><td>q_type</td><td>題型</td><td>single</td></tr>
+              <tr><td>year</td><td>年份</td><td>2023</td></tr>
+              <tr><td>source</td><td>來源</td><td>112年甄試</td></tr>
+              <tr><td>stem</td><td>題幹</td><td>下列何者...</td></tr>
+              <tr><td>option_A~E</td><td>選項A到E</td><td>選項內容</td></tr>
+              <tr><td>answer</td><td>答案</td><td>B</td></tr>
+              <tr><td>explanation</td><td>解析</td><td>...</td></tr>
+              <tr><td>difficulty</td><td>難度1-3</td><td>2</td></tr>
+              <tr><td>tags</td><td>標籤</td><td>急救,CPR</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 分類管理 -->
+  <div class="card border-0 shadow-sm">
+    <div class="card-body">
+      <h6 class="fw-bold mb-3">題庫分類</h6>
+      {% for cat in categories %}
+      <div class="d-flex align-items-center py-2 border-bottom">
+        <div>
+          <div class="fw-semibold">{{ cat.name }}</div>
+          <small class="text-muted"><code>{{ cat.code }}</code> · {{ cat.questions|length }} 題</small>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+</div>
+{% endblock %}

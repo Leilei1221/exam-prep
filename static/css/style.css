@@ -1,0 +1,345 @@
+/* ====== 主題色 ====== */
+:root {
+  --color-primary: #2B7FBF;
+  --color-success: #27AE60;
+  --color-danger: #E74C3C;
+  --color-warning: #F39C12;
+  --color-info: #16A085;
+  --nav-height: 56px;
+  --bottom-nav-height: 68px;
+}
+
+/* ====== 全域 ====== */
+body {
+  font-size: 15px;
+  background: #f5f7fa;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.pb-nav {
+  padding-bottom: calc(var(--bottom-nav-height) + 8px);
+}
+
+.main-content {
+  min-height: calc(100vh - var(--nav-height) - var(--bottom-nav-height));
+}
+
+/* ====== 頂部 header ====== */
+.app-header {
+  background: var(--color-primary);
+  height: var(--nav-height);
+  box-shadow: 0 2px 8px rgba(43,127,191,.25);
+}
+
+/* ====== 底部導覽列 ====== */
+.bottom-nav {
+  background: #fff;
+  height: var(--bottom-nav-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 1px solid #e8ecf0;
+  box-shadow: 0 -2px 12px rgba(0,0,0,.08);
+  padding-bottom: env(safe-area-inset-bottom, 0);
+}
+
+.bottom-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #adb5bd;
+  font-size: .7rem;
+  gap: 3px;
+  padding: 4px 12px;
+  border-radius: 12px;
+  transition: all .18s ease;
+  min-width: 56px;
+}
+
+.bottom-nav-item i {
+  font-size: 1.4rem;
+}
+
+.bottom-nav-item.active {
+  color: var(--color-primary);
+}
+
+.bottom-nav-item.active i {
+  transform: translateY(-1px);
+}
+
+/* ====== iPad 觸控按鈕 ====== */
+.touch-btn,
+.btn-option {
+  min-height: 56px;
+  font-size: 1.05rem;
+  border-radius: 12px !important;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform .1s ease, box-shadow .1s ease;
+}
+
+.touch-btn:active {
+  transform: scale(0.97);
+}
+
+.touch-input {
+  min-height: 52px;
+  font-size: 1rem;
+}
+
+/* ====== 選項按鈕 ====== */
+.option-btn {
+  width: 100%;
+  text-align: left;
+  border-radius: 12px !important;
+  transition: all .18s ease;
+  cursor: pointer;
+  border: 2px solid transparent !important;
+}
+
+.option-btn:hover {
+  border-color: var(--color-primary) !important;
+  background: #f0f7ff;
+}
+
+.option-btn:active {
+  transform: scale(0.98);
+}
+
+.option-key {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: #e9ecef;
+  font-weight: 700;
+  font-size: .95rem;
+  flex-shrink: 0;
+  transition: background .18s;
+}
+
+.option-btn:hover .option-key {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+/* 答對 */
+.correct-answer {
+  border-color: var(--color-success) !important;
+  background: #f0faf4 !important;
+  pointer-events: none;
+}
+
+.correct-answer .option-key {
+  background: var(--color-success);
+  color: #fff;
+}
+
+/* 答錯 */
+.wrong-answer {
+  border-color: var(--color-danger) !important;
+  background: #fff5f5 !important;
+  pointer-events: none;
+}
+
+.wrong-answer .option-key {
+  background: var(--color-danger);
+  color: #fff;
+}
+
+/* 答對動畫 */
+@keyframes correctPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+
+.correct-answer {
+  animation: correctPulse .35s ease;
+}
+
+/* ====== 題幹 ====== */
+.question-stem {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #2c3e50;
+}
+
+.question-stem-sm {
+  font-size: .95rem;
+  line-height: 1.5;
+  color: #495057;
+}
+
+.text-truncate-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ====== 統計卡片 ====== */
+.stat-card .stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.stat-label {
+  font-size: .8rem;
+  color: #6c757d;
+  margin-top: 2px;
+}
+
+/* ====== 快速入口 ====== */
+.quick-btn {
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.quick-btn:hover, .quick-btn:active {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,.12) !important;
+}
+
+/* ====== 計劃 Banner ====== */
+.plan-banner {
+  background: linear-gradient(135deg, var(--color-primary), #1a5c91);
+}
+
+.plan-day-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3rem;
+  padding: 4px 10px;
+  background: rgba(255,255,255,.25);
+  color: #fff;
+  font-weight: 700;
+  font-size: .9rem;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+/* ====== 計劃列表 ====== */
+.plan-day-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: .85rem;
+  flex-shrink: 0;
+}
+
+.plan-item {
+  transition: box-shadow .15s;
+}
+
+.plan-item:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,.1) !important;
+}
+
+.plan-item-today {
+  border-left: 4px solid var(--color-primary) !important;
+}
+
+.plan-item-done {
+  opacity: .75;
+}
+
+.plan-item-review {
+  border-left: 4px solid var(--color-warning) !important;
+}
+
+/* ====== 標籤膠囊 ====== */
+.tag-pill {
+  border-radius: 20px;
+  font-size: .85rem;
+}
+
+/* ====== 倒數計時器 ====== */
+.timer-ring-container {
+  position: relative;
+}
+
+#timerCanvas {
+  display: block;
+}
+
+.timer-display {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  pointer-events: none;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ====== 答題要點 ====== */
+.key-point-item {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* ====== 選項詳情頁 ====== */
+.option-display {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+}
+
+.option-correct {
+  background: #f0faf4;
+  border-color: var(--color-success) !important;
+}
+
+/* ====== 週次標題 ====== */
+.week-header {
+  position: relative;
+}
+
+/* ====== 卡片圓角 ====== */
+.card {
+  border-radius: 14px !important;
+}
+
+/* ====== 滾動條美化 ====== */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1cdd8;
+  border-radius: 4px;
+}
+
+/* ====== iPad 優化 ====== */
+@media (min-width: 768px) {
+  .main-content > .container-fluid {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .question-stem {
+    font-size: 1.2rem;
+  }
+
+  .touch-btn, .btn-option {
+    min-height: 60px;
+    font-size: 1.1rem;
+  }
+}

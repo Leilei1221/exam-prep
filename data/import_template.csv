@@ -1,0 +1,5 @@
+category_code,q_type,year,source,stem,option_A,option_B,option_C,option_D,option_E,answer,explanation,difficulty,tags
+exam_senior,single,2023,112年高中健護甄試,題目內容（請填入）,選項A內容,選項B內容,選項C內容,選項D內容,,B,解析說明（請填入）,2,標籤1,標籤2
+exam_senior,multiple,2022,111年高中健護甄試,複選題題目,選項A,選項B,選項C,選項D,選項E,"A,C",解析說明,3,複選,健護
+curriculum108,single,2024,113年課綱考題,108課綱相關題目,選項A,選項B,選項C,選項D,,A,解析,2,108課綱,素養
+technician,single,2022,111年四技二專,四技二專題目,選項A,選項B,選項C,選項D,,C,解析說明,2,四技二專,護理

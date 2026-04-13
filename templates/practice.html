@@ -1,0 +1,178 @@
+{% extends "base.html" %}
+{% block title %}練習作答{% endblock %}
+{% block page_title %}練習作答{% endblock %}
+
+{% block header_actions %}
+<button class="btn btn-outline-light btn-sm" data-bs-toggle="offcanvas" data-bs-target="#filterPanel">
+  <i class="bi bi-funnel"></i>
+</button>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid px-3 py-3">
+
+  <!-- 篩選器 Offcanvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="filterPanel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">篩選條件</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <form id="filterForm">
+        <div class="mb-3">
+          <label class="form-label fw-semibold">題庫分類</label>
+          {% for cat in categories %}
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="category_id" value="{{ cat.id }}"
+                   id="cat{{ cat.id }}" {% if category_id == cat.id %}checked{% endif %}>
+            <label class="form-check-label" for="cat{{ cat.id }}">{{ cat.name }}</label>
+          </div>
+          {% endfor %}
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="category_id" value=""
+                   id="catAll" {% if not category_id %}checked{% endif %}>
+            <label class="form-check-label" for="catAll">全部分類</label>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label fw-semibold">難度</label>
+          <select name="difficulty" class="form-select">
+            <option value="">全部</option>
+            <option value="1" {% if difficulty == 1 %}selected{% endif %}>簡單</option>
+            <option value="2" {% if difficulty == 2 %}selected{% endif %}>中等</option>
+            <option value="3" {% if difficulty == 3 %}selected{% endif %}>困難</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="form-label fw-semibold">標籤關鍵字</label>
+          <input type="text" name="tags" class="form-control" value="{{ tags_filter }}" placeholder="如：急救、CPR">
+        </div>
+        <div class="d-grid">
+          <button type="submit" class="btn btn-primary touch-btn">套用篩選</button>
+        </div>
+        <div class="d-grid mt-2">
+          <a href="{{ url_for('practice') }}" class="btn btn-outline-secondary">清除篩選</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  {% if question %}
+  <!-- 題目卡片 -->
+  <div id="questionCard" class="card border-0 shadow-sm mb-3">
+    <div class="card-body">
+      <!-- 題目 meta -->
+      <div class="d-flex align-items-center gap-2 mb-3">
+        <span class="badge bg-{{ get_difficulty_color(question.difficulty) }}">
+          {{ get_difficulty_label(question.difficulty) }}
+        </span>
+        {% if question.year %}
+        <span class="badge bg-secondary">{{ question.year }}年</span>
+        {% endif %}
+        <span class="badge bg-light text-dark">
+          {% if question.q_type == 'single' %}單選{% elif question.q_type == 'multiple' %}複選{% else %}申論{% endif %}
+        </span>
+        {% if question.category %}
+        <span class="badge bg-info-subtle text-info">{{ question.category.name }}</span>
+        {% endif %}
+        <a href="{{ url_for('question_detail', qid=question.id) }}" class="ms-auto text-muted">
+          <i class="bi bi-eye"></i>
+        </a>
+      </div>
+
+      <!-- 題幹 -->
+      <p class="question-stem mb-3">{{ question.stem }}</p>
+
+      <!-- 標籤 -->
+      {% if question.tags %}
+      <div class="mb-3">
+        {% for tag in question.tags.split(',') %}
+        <span class="badge bg-light text-secondary me-1">{{ tag.strip() }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- 選項 -->
+  <div id="optionsArea" class="d-grid gap-2 mb-3">
+    {% if question.q_type == 'multiple' %}
+    <div class="alert alert-info py-2 mb-2"><i class="bi bi-info-circle me-1"></i>複選題（可選多項）</div>
+    {% for opt in options %}
+    <label class="option-btn card border-0 shadow-sm" id="opt-{{ opt.key }}">
+      <div class="card-body d-flex align-items-center py-3 px-3">
+        <input type="checkbox" class="form-check-input me-3 flex-shrink-0 multiple-opt"
+               value="{{ opt.key }}" style="width:1.3em;height:1.3em;">
+        <span class="option-key me-2">{{ opt.key }}</span>
+        <span>{{ opt.text }}</span>
+      </div>
+    </label>
+    {% endfor %}
+    <button class="btn btn-primary btn-lg touch-btn mt-1" onclick="submitMultiple()">
+      <i class="bi bi-check-lg me-1"></i>確認作答
+    </button>
+    {% else %}
+    {% for opt in options %}
+    <button class="option-btn card border-0 shadow-sm btn-option touch-btn"
+            id="opt-{{ opt.key }}"
+            onclick="submitAnswer('{{ opt.key }}', '{{ question.id }}')">
+      <div class="card-body d-flex align-items-center py-3 px-3">
+        <span class="option-key me-3">{{ opt.key }}</span>
+        <span class="text-start">{{ opt.text }}</span>
+      </div>
+    </button>
+    {% endfor %}
+    {% endif %}
+  </div>
+
+  <!-- 結果區域（預設隱藏） -->
+  <div id="resultArea" class="d-none mb-3">
+    <div id="resultCard" class="card border-0 shadow-sm">
+      <div class="card-body">
+        <div id="resultBadge" class="fs-5 fw-bold mb-2"></div>
+        <div id="explanationText" class="text-muted small"></div>
+      </div>
+    </div>
+    <div class="d-grid gap-2 mt-3">
+      <button class="btn btn-primary btn-lg touch-btn" onclick="nextQuestion()">
+        <i class="bi bi-arrow-right me-1"></i>下一題
+      </button>
+    </div>
+  </div>
+
+  <!-- 隱藏資料 -->
+  <input type="hidden" id="questionId" value="{{ question.id }}">
+  <input type="hidden" id="questionType" value="{{ question.q_type }}">
+  <input type="hidden" id="dayNumber" value="{{ day or '' }}">
+  <input type="hidden" id="currentCategoryId" value="{{ category_id or '' }}">
+  <input type="hidden" id="currentDifficulty" value="{{ difficulty or '' }}">
+  <input type="hidden" id="currentTags" value="{{ tags_filter or '' }}">
+
+  {% else %}
+  <div class="text-center py-5">
+    <i class="bi bi-inbox fs-1 text-muted d-block mb-3"></i>
+    <h5 class="text-muted">目前沒有符合條件的題目</h5>
+    <p class="text-muted">請調整篩選條件，或前往匯入更多題目</p>
+    <a href="{{ url_for('admin_import') }}" class="btn btn-primary me-2">匯入題庫</a>
+    <a href="{{ url_for('practice') }}" class="btn btn-outline-secondary">清除篩選</a>
+  </div>
+  {% endif %}
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/practice.js') }}"></script>
+<script>
+// 篩選表單提交
+document.getElementById('filterForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const fd = new FormData(this);
+  const params = new URLSearchParams();
+  for (const [k, v] of fd.entries()) {
+    if (v) params.set(k, v);
+  }
+  window.location.href = '/practice?' + params.toString();
+});
+</script>
+{% endblock %}
