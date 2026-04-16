@@ -1,0 +1,121 @@
+[
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2024,
+    "source": "心理健康考點",
+    "stem": "自殺防治守門人「TALK」步驟，正確意義為何？",
+    "options": [
+      {"key": "A", "text": "T=告訴(Tell)他人、A=詢問(Ask)自殺意念、L=聆聽(Listen)、K=聯繫(Keep contact)"},
+      {"key": "B", "text": "T=主動關懷詢問(Tell/Ask)、A=告知(Announce)資源、L=帶領(Lead)就醫、K=保持聯繫(Keep)"},
+      {"key": "C", "text": "T=傾聽(Talk)、A=評估(Assess)危機、L=轉介(Lead)、K=知識(Knowledge)"},
+      {"key": "D", "text": "T=信任(Trust)建立、A=行動(Action)計畫、L=學習(Learn)、K=確認(Know)"}
+    ],
+    "answer": "A",
+    "explanation": "自殺守門人TALK四步驟：T（Tell）：主動關懷，告訴對方你注意到他的改變，表達關心（「我注意到你最近…」）；A（Ask）：直接詢問是否有自殺的念頭（「你有沒有想要結束自己的生命？」）→直接詢問不會增加自殺風險；L（Listen）：用心聆聽，不評判，接納其感受；K（Keep safe）：保持安全，陪伴或協助就醫，連結資源（自殺防治專線1925、緊急999/110）。警訊（8個跡象）：直接說出死意、情緒低落、突然平靜、交代後事、贈送物品、自我傷害、藥物/酒精增加、社交退縮。",
+    "difficulty": 1,
+    "tags": "自殺防治,TALK,守門人,心理健康"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "心理健康考點",
+    "stem": "依DSM-5，重鬱症（Major Depressive Disorder）的診斷需要在連續幾週內至少出現幾項症狀，且至少包含哪2項核心症狀之一？",
+    "options": [
+      {"key": "A", "text": "連續1週，5項以上；核心症狀：情緒低落或思想障礙"},
+      {"key": "B", "text": "連續2週，5項以上；核心症狀：情緒低落或失去興趣/愉悅感（anhedonia）"},
+      {"key": "C", "text": "連續4週，3項以上；核心症狀：睡眠障礙或食慾改變"},
+      {"key": "D", "text": "連續3個月，7項以上；核心症狀：絕望感或自殺意念"}
+    ],
+    "answer": "B",
+    "explanation": "DSM-5重鬱症（MDD）診斷標準：連續2週內出現9項症狀中至少5項，且必須包含以下2項核心症狀之一：（1）幾乎每天情緒低落；（2）對幾乎所有活動失去興趣或愉悅感（anhedonia）。9項症狀：憂鬱情緒、失去興趣、體重/食慾變化、睡眠障礙、精神運動遲滯/激動、疲倦失去精力、無價值感/罪惡感、注意力下降、反覆死亡/自殺意念。必須造成功能損害，且非物質或其他疾病所致。",
+    "difficulty": 2,
+    "tags": "DSM-5,重鬱症,憂鬱症,心理健康"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2022,
+    "source": "心理健康考點",
+    "stem": "「廣泛性焦慮症（Generalized Anxiety Disorder, GAD）」依DSM-5的診斷，主要特徵持續時間需達多久？",
+    "options": [
+      {"key": "A", "text": "至少1個月"},
+      {"key": "B", "text": "至少3個月"},
+      {"key": "C", "text": "至少6個月"},
+      {"key": "D", "text": "至少1年"}
+    ],
+    "answer": "C",
+    "explanation": "廣泛性焦慮症（GAD）DSM-5診斷：對多種事件或活動有過度焦慮和擔心（apprehensive expectation），難以控制，持續≥6個月，並伴隨至少3項症狀：坐立不安/緊張、易疲勞、注意力難以集中、易怒、肌肉緊繃、睡眠障礙（兒童只需1項）。與恐慌症（Panic Disorder）區別：GAD是持續慢性焦慮；恐慌症是突發性強烈恐懼發作（panic attack）伴隨生理症狀，持續數分鐘達高峰。",
+    "difficulty": 2,
+    "tags": "DSM-5,焦慮症,GAD,心理健康"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2021,
+    "source": "心理健康考點",
+    "stem": "「壓力」（Stress）的壓力反應，依 Selye 的「一般適應症候群（General Adaptation Syndrome, GAS）」分為哪三期？",
+    "options": [
+      {"key": "A", "text": "警覺期→抵抗期→衰竭期"},
+      {"key": "B", "text": "警覺期→恢復期→適應期"},
+      {"key": "C", "text": "刺激期→反應期→恢復期"},
+      {"key": "D", "text": "準備期→壓力期→後壓力期"}
+    ],
+    "answer": "A",
+    "explanation": "Hans Selye一般適應症候群（GAS）三期：（1）警覺期（Alarm Stage）：壓力源出現→腎上腺素分泌↑、心跳加速、血壓升高（「戰鬥或逃跑」反應），身體動員能量；（2）抵抗期（Resistance Stage）：持續面對壓力→身體嘗試適應，壓力荷爾蒙維持高水準，免疫功能開始下降；（3）衰竭期（Exhaustion Stage）：壓力源持續過久，身體能量耗盡，易罹患疾病（高血壓、胃潰瘍、免疫下降），嚴重可致死。因應策略：問題焦點因應（改變壓力源）vs情緒焦點因應（調整情緒反應）。",
+    "difficulty": 2,
+    "tags": "壓力,Selye,GAS,心理健康"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "心理健康考點",
+    "stem": "PTSD（創傷後壓力症，Post-Traumatic Stress Disorder）依DSM-5，其核心症狀群不包含下列哪一項？",
+    "options": [
+      {"key": "A", "text": "侵入性症狀（Intrusion symptoms）：如閃回（flashback）、惡夢"},
+      {"key": "B", "text": "持續迴避（Avoidance）：迴避相關記憶、情境或人事物"},
+      {"key": "C", "text": "認知與情緒的負向改變"},
+      {"key": "D", "text": "持續躁狂發作（Manic episodes）"}
+    ],
+    "answer": "D",
+    "explanation": "PTSD（DSM-5）四大核心症狀群：（1）侵入性症狀（Intrusion）：閃回、惡夢、心理痛苦/生理反應；（2）持續迴避（Avoidance）：迴避相關想法、地點、人、活動；（3）認知與情緒負向改變（Negative Alterations in Cognition and Mood）：負向信念、持續負面情緒、罪惡感、與他人疏離；（4）激發與反應性改變（Alterations in Arousal）：過度警覺、睡眠障礙、易怒、驚嚇反應↑。躁狂發作是躁鬱症（Bipolar Disorder）的特徵，與PTSD無關。診斷需症狀持續>1個月且造成功能損害。",
+    "difficulty": 3,
+    "tags": "DSM-5,PTSD,創傷,心理健康"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2024,
+    "source": "心理健康考點",
+    "stem": "台灣「自殺防治專線」電話號碼為何？學校教師發現學生有自殺高危機時，應採取的首要行動為何？",
+    "options": [
+      {"key": "A", "text": "1925；立即通知全班同學共同關心"},
+      {"key": "B", "text": "1925；陪伴學生，立即啟動校安通報，連結輔導系統與家長"},
+      {"key": "C", "text": "1922；通知媒體協助搜尋"},
+      {"key": "D", "text": "1925；要求學生簽署不自殺承諾書即可"}
+    ],
+    "answer": "B",
+    "explanation": "台灣自殺防治資源：（1）自殺防治專線：1925（24小時）；（2）安心專線：1925。教師遇高危機學生處理程序：（1）立即陪伴，不離開（不可讓高危學生獨處）；（2）移除危險物品；（3）告知輔導老師/主任；（4）啟動校安通報系統；（5）聯繫家長；（6）必要時撥打119或送急診。注意：（a）不可對全班廣播（避免感染效應）；（b）不應要求簽「不自殺承諾書」（已不再是有效策略）；（c）自殺新聞報導需遵守「安全報導原則」（Werther Effect vs Papageno Effect）。",
+    "difficulty": 2,
+    "tags": "自殺防治,學校輔導,緊急處理,心理健康"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2022,
+    "source": "心理健康考點",
+    "stem": "霸凌（Bullying）的定義包含哪三個核心要素？",
+    "options": [
+      {"key": "A", "text": "意圖傷害、重複性、被害者有能力自我防衛"},
+      {"key": "B", "text": "意圖傷害、重複性、力量不對等（Power Imbalance）"},
+      {"key": "C", "text": "肢體攻擊、言語侮辱、排擠行為，三者同時存在"},
+      {"key": "D", "text": "單次嚴重的攻擊行為，造成明顯傷害"}
+    ],
+    "answer": "B",
+    "explanation": "霸凌（Bullying）三核心要素（Olweus定義）：（1）意圖傷害（Intentional harm）；（2）重複性（Repeated over time）；（3）力量不對等（Power imbalance）：霸凌者與被霸凌者在力量（體型、人數、社會地位等）上有明顯差異。霸凌類型：肢體霸凌、言語霸凌、關係/社交霸凌（排擠）、網路霸凌（Cyberbullying）、性霸凌。台灣「性別平等教育法」將「性霸凌」另列。學校處理霸凌：依霸凌三要素判斷（非每次衝突都是霸凌）；台灣「校園霸凌防制準則」規定學校處理程序。",
+    "difficulty": 2,
+    "tags": "霸凌,心理健康,校園安全"
+  }
+]

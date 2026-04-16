@@ -1,0 +1,138 @@
+[
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2024,
+    "source": "幼獅版 第1章",
+    "stem": "世界衛生組織（WHO）於1948年對健康的定義，下列何者正確？",
+    "options": [
+      {"key": "A", "text": "健康是沒有疾病或虛弱"},
+      {"key": "B", "text": "健康是生理、心理和社會處於完全安適狀態，而不僅是沒有疾病或虛弱而已"},
+      {"key": "C", "text": "健康是個人或團體能確認和實現願望、滿足需求"},
+      {"key": "D", "text": "健康是一種日常生活資源，而非生活目標"}
+    ],
+    "answer": "B",
+    "explanation": "WHO於1948年定義：「健康是生理、心理和社會處於完全安適狀態，而不僅是沒有疾病或虛弱而已。」選項C是1986年渥太華憲章修正版定義；選項D則是強調健康為日常生活資源的概念。",
+    "difficulty": 1,
+    "tags": "健康定義,WHO,渥太華憲章"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2024,
+    "source": "幼獅版 第1章",
+    "stem": "1986年第一屆國際健康促進會議訂定渥太華憲章，將健康定義修正為下列何者？",
+    "options": [
+      {"key": "A", "text": "健康是生理、心理和社會完全安適狀態"},
+      {"key": "B", "text": "個人或團體必須能確認和實現願望、滿足需求，以及改變或適應環境"},
+      {"key": "C", "text": "健康是個人追求自我實現的最終目標"},
+      {"key": "D", "text": "健康是免於疾病困擾的身體狀態"}
+    ],
+    "answer": "B",
+    "explanation": "1986年渥太華憲章修正健康定義：「個人或團體必須能夠確認和實現願望、滿足需求，以及改變或適應環境」。此定義強調健康是日常生活資源，而非生活目標，是積極的概念。",
+    "difficulty": 2,
+    "tags": "健康定義,渥太華憲章,健康促進"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2024,
+    "source": "幼獅版 第3章",
+    "stem": "根據三角致病模式（epidemiological triad），傳染病的發生需要哪三個要素的交互作用？",
+    "options": [
+      {"key": "A", "text": "病原體、宿主、傳染途徑"},
+      {"key": "B", "text": "病原體、環境、時間"},
+      {"key": "C", "text": "宿主、媒介、環境"},
+      {"key": "D", "text": "感染源、傳播途徑、易感宿主"}
+    ],
+    "answer": "A",
+    "explanation": "三角致病模式（epidemiological triad）認為傳染病的發生必須有：①病原體（感染源）、②宿主（抵抗力弱者）、③傳染途徑（接觸傳染、蟲媒傳染、飛沫或空氣傳染、食物或飲水傳染、性接觸或血液傳染等）三者交互作用。",
+    "difficulty": 2,
+    "tags": "三角致病模式,傳染病,流行病學"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2024,
+    "source": "幼獅版 第3章",
+    "stem": "下列何種傳染途徑屬於「非直接接觸傳染」（間接傳播）？",
+    "options": [
+      {"key": "A", "text": "飛沫傳染"},
+      {"key": "B", "text": "性接觸傳染"},
+      {"key": "C", "text": "蟲媒傳染"},
+      {"key": "D", "text": "血液傳染"}
+    ],
+    "answer": "C",
+    "explanation": "蟲媒傳染是透過媒介生物（如蚊、蜱、蚤等）傳播疾病，屬於間接傳染。例如瘧疾（瘧蚊）、登革熱（埃及斑蚊）、萊姆病（蜱）等。飛沫傳染、性接觸傳染、血液傳染均屬直接或近距離傳播。",
+    "difficulty": 2,
+    "tags": "傳染途徑,蟲媒傳染,傳染病預防"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2024,
+    "source": "幼獅版 第5章",
+    "stem": "依據聯合國及世界衛生組織（WHO）定義，老年人口比例達到多少時，稱為「超高齡社會」（super-aged society）？",
+    "options": [
+      {"key": "A", "text": "7%以上"},
+      {"key": "B", "text": "14%以上"},
+      {"key": "C", "text": "20%以上"},
+      {"key": "D", "text": "25%以上"}
+    ],
+    "answer": "C",
+    "explanation": "依據WHO定義：老年人口（65歲以上）佔總人口比率：7%以上→高齡化社會（aging society）；14%以上→高齡社會（aged society）；20%以上→超高齡社會（super-aged society）。台灣1993年進入高齡化社會，2018年進入高齡社會，2026年預計進入超高齡社會。",
+    "difficulty": 1,
+    "tags": "老化,超高齡社會,老年人口"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2024,
+    "source": "幼獅版 第5章",
+    "stem": "台灣於哪一年正式邁入「高齡社會」（aged society），即老年人口超過14%？",
+    "options": [
+      {"key": "A", "text": "1993年"},
+      {"key": "B", "text": "2000年"},
+      {"key": "C", "text": "2018年"},
+      {"key": "D", "text": "2026年"}
+    ],
+    "answer": "C",
+    "explanation": "台灣老化進程：1993年老年人口達7%，進入「高齡化社會」；2018年達14%，邁入「高齡社會」；預計2026年將超過20%，與日本、南韓等國家同為「超高齡社會」。",
+    "difficulty": 1,
+    "tags": "老化,高齡社會,台灣人口"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2024,
+    "source": "幼獅版 第6章",
+    "stem": "「全人的性（sexuality）」涵蓋哪四個層面？",
+    "options": [
+      {"key": "A", "text": "生理、心理、社會、心靈"},
+      {"key": "B", "text": "生理、情緒、認知、行為"},
+      {"key": "C", "text": "生理、心理、道德、法律"},
+      {"key": "D", "text": "性別、性行為、性取向、性別認同"}
+    ],
+    "answer": "A",
+    "explanation": "「全人的性（sexuality）」超越動物生物性特徵，涵蓋生理（生殖生理）、心理（情感與認知）、社會（人際關係與文化）及心靈（存在意義）四個層面，是雙方契合的整體概念。",
+    "difficulty": 2,
+    "tags": "全人的性,sexuality,性教育"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2024,
+    "source": "幼獅版 第4章",
+    "stem": "下列何者不屬於「代謝症候群」（metabolic syndrome）的判斷指標？",
+    "options": [
+      {"key": "A", "text": "腹部肥胖（腰圍過大）"},
+      {"key": "B", "text": "血壓偏高"},
+      {"key": "C", "text": "骨質密度降低"},
+      {"key": "D", "text": "空腹血糖偏高"}
+    ],
+    "answer": "C",
+    "explanation": "代謝症候群的五項判斷指標：①腹部肥胖（男腰圍≥90cm，女≥80cm）；②高血壓（收縮壓≥130或舒張壓≥85mmHg）；③空腹血糖偏高（≥100mg/dL）；④血中三酸甘油酯偏高（≥150mg/dL）；⑤高密度脂蛋白膽固醇偏低。骨質密度降低不屬於代謝症候群指標，而與骨質疏鬆症相關。",
+    "difficulty": 2,
+    "tags": "代謝症候群,慢性病,危險因子"
+  }
+]

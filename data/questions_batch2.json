@@ -1,0 +1,904 @@
+[
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "泰于版Ch.I 守護健康",
+    "stem": "加拿大衛生部提出影響人類健康的四大因素，其中影響比例最大的是？",
+    "options": [
+      {"key": "A", "text": "遺傳生物因素（25%）"},
+      {"key": "B", "text": "環境因素（19%）"},
+      {"key": "C", "text": "生活型態（46%）"},
+      {"key": "D", "text": "醫療保健體系（10%）"}
+    ],
+    "answer": "C",
+    "explanation": "加拿大衛生部將影響健康的因素分為四大類：生活型態46%（最大）、遺傳生物因素25%、環境因素19%、醫療保健體系10%。其中生活型態是個人可以透過努力改變的，包括吸菸、飲酒、活動量不足、飲食不當等。",
+    "difficulty": 1,
+    "tags": "健康因素,生活型態,影響健康"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "泰于版Ch.I 守護健康",
+    "stem": "WHO於1998年在原有「身體、心理、社會」三層面健康定義中，新增了哪個層面？",
+    "options": [
+      {"key": "A", "text": "情緒層面"},
+      {"key": "B", "text": "靈性層面"},
+      {"key": "C", "text": "文化層面"},
+      {"key": "D", "text": "經濟層面"}
+    ],
+    "answer": "B",
+    "explanation": "WHO1948年定義健康為「身體、心理及社會三方面皆完全安適的狀態」。1998年進一步提出健康還需涵蓋「靈性層面」，強調透過信仰探索、人生意義追求，以熱情去經歷生命的各種挑戰，形成全人健康（Holistic Health）四個層面。",
+    "difficulty": 2,
+    "tags": "WHO,健康定義,靈性,全人健康"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2022,
+    "source": "甄試常考題",
+    "stem": "台灣現行「三段五級」預防醫學中，「第三段」預防的目標為何？",
+    "options": [
+      {"key": "A", "text": "促進健康、預防疾病"},
+      {"key": "B", "text": "早期診斷、適切治療"},
+      {"key": "C", "text": "防止殘障惡化、復健回歸社會"},
+      {"key": "D", "text": "消除致病因子、增強宿主抵抗力"}
+    ],
+    "answer": "C",
+    "explanation": "三段五級預防醫學（Leavell & Clark）：第一段（初段預防）=第1級促進健康+第2級特殊保護；第二段（次段預防）=第3級早期診斷+第4級適切治療；第三段（末段預防）=第5級復健。第三段目標是限制殘障、防止惡化、協助復健，使患者回歸正常生活。",
+    "difficulty": 2,
+    "tags": "三段五級,預防醫學,復健,Leavell Clark"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2024,
+    "source": "甄試常考題",
+    "stem": "依三段五級理論，「定期接受子宮頸抹片檢查」屬於哪一級預防？",
+    "options": [
+      {"key": "A", "text": "第一級（促進健康）"},
+      {"key": "B", "text": "第二級（特殊保護）"},
+      {"key": "C", "text": "第三級（早期診斷）"},
+      {"key": "D", "text": "第四級（適切治療）"}
+    ],
+    "answer": "C",
+    "explanation": "子宮頸抹片屬於「第三級早期診斷早期治療（Early diagnosis and prompt treatment）」，即在疾病症狀出現前或初期即透過篩檢發現，屬第二段預防。第二級為特殊保護（如打疫苗）；第一級為促進健康（如均衡飲食）。",
+    "difficulty": 2,
+    "tags": "三段五級,篩檢,早期診斷,子宮頸癌"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "泰于版Ch.I 傳染病防治",
+    "stem": "傳染病流行的三大要素「傳染鏈」中，下列何者屬於「傳播途徑（Mode of Transmission）」？",
+    "options": [
+      {"key": "A", "text": "結核桿菌"},
+      {"key": "B", "text": "飛沫傳播"},
+      {"key": "C", "text": "肺功能低下者"},
+      {"key": "D", "text": "鼻咽黏膜"}
+    ],
+    "answer": "B",
+    "explanation": "傳染病流行三要素（傳染鏈）：①傳染源（Infectious Agent）：如結核桿菌；②傳播途徑（Mode of Transmission）：如飛沫傳播、接觸傳播、空氣傳播、媒介傳播等；③易感宿主（Susceptible Host）：如免疫力低下者。預防傳染病需切斷三者中的任一環節。",
+    "difficulty": 2,
+    "tags": "傳染病,傳染鏈,傳播途徑,流行三要素"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2022,
+    "source": "甄試常考題",
+    "stem": "依據台灣《傳染病防治法》，下列哪種疾病屬於「第一類法定傳染病」？",
+    "options": [
+      {"key": "A", "text": "流行性感冒"},
+      {"key": "B", "text": "登革熱"},
+      {"key": "C", "text": "天花"},
+      {"key": "D", "text": "腸病毒感染"}
+    ],
+    "answer": "C",
+    "explanation": "台灣法定傳染病分五類：第一類（最嚴重，需立即通報）包含天花、鼠疫、嚴重急性呼吸道症候群（SARS）、中東呼吸症候群（MERS）、病毒性出血熱等。登革熱屬第二類；流行性感冒屬第四類；腸病毒感染屬第四類（腸病毒71型重症為第二類）。",
+    "difficulty": 2,
+    "tags": "傳染病防治法,法定傳染病,第一類,天花"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "泰于版Ch.I 慢性病",
+    "stem": "依美國心臟學會（AHA）2017年新標準，高血壓第一期（Stage 1 Hypertension）的定義為收縮壓/舒張壓達到多少？",
+    "options": [
+      {"key": "A", "text": "≥120/80 mmHg"},
+      {"key": "B", "text": "≥130/80 mmHg"},
+      {"key": "C", "text": "≥140/90 mmHg"},
+      {"key": "D", "text": "≥160/100 mmHg"}
+    ],
+    "answer": "B",
+    "explanation": "2017年AHA高血壓分類：正常（<120/80）→血壓偏高Elevated（120-129/<80）→高血壓第一期（130-139/80-89 mmHg）→高血壓第二期（≥140/≥90 mmHg）→高血壓危象（>180/>120 mmHg）。舊標準為≥140/90才算高血壓，新標準更嚴格。",
+    "difficulty": 3,
+    "tags": "高血壓,AHA,慢性病,血壓標準"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "甄試常考題",
+    "stem": "台灣國民健康署推動的「四大癌症免費篩檢」，下列哪項組合正確？",
+    "options": [
+      {"key": "A", "text": "大腸癌、子宮頸癌、乳癌、口腔癌"},
+      {"key": "B", "text": "大腸癌、肺癌、乳癌、口腔癌"},
+      {"key": "C", "text": "胃癌、子宮頸癌、乳癌、口腔癌"},
+      {"key": "D", "text": "大腸癌、子宮頸癌、卵巢癌、口腔癌"}
+    ],
+    "answer": "A",
+    "explanation": "國健署四大癌症免費篩檢：①大腸癌（50-74歲每2年1次糞便潛血）、②子宮頸癌（30歲以上婦女每3年1次抹片）、③乳癌（45-69歲及40-44歲二等親內家族史者每2年1次乳房攝影）、④口腔癌（30歲以上嚼檳榔或吸菸者每2年1次口腔黏膜檢查）。2022年起新增肺癌篩檢（但非原四大）。",
+    "difficulty": 2,
+    "tags": "癌症篩檢,四大癌症,國健署,預防醫學"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2022,
+    "source": "泰于版Ch.I 慢性病",
+    "stem": "糖尿病的診斷標準，下列何者正確？（空腹血糖值）",
+    "options": [
+      {"key": "A", "text": "空腹血糖≥100 mg/dL"},
+      {"key": "B", "text": "空腹血糖≥110 mg/dL"},
+      {"key": "C", "text": "空腹血糖≥126 mg/dL"},
+      {"key": "D", "text": "空腹血糖≥140 mg/dL"}
+    ],
+    "answer": "C",
+    "explanation": "糖尿病診斷標準（符合其一即可診斷）：①空腹血糖≥126 mg/dL（空腹8小時以上）；②口服75g葡萄糖後2小時血糖≥200 mg/dL；③隨機血糖≥200 mg/dL且有症狀；④糖化血色素（HbA1c）≥6.5%。空腹血糖100-125 mg/dL為「糖尿病前期（空腹血糖偏高）」。",
+    "difficulty": 3,
+    "tags": "糖尿病,診斷標準,血糖,慢性病"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "泰于版Ch.I 慢性病",
+    "stem": "代謝症候群（Metabolic Syndrome）的診斷標準中，腰圍的判斷標準在台灣為何？",
+    "options": [
+      {"key": "A", "text": "男性≥85cm，女性≥80cm"},
+      {"key": "B", "text": "男性≥90cm，女性≥80cm"},
+      {"key": "C", "text": "男性≥90cm，女性≥85cm"},
+      {"key": "D", "text": "男性≥95cm，女性≥85cm"}
+    ],
+    "answer": "B",
+    "explanation": "台灣代謝症候群診斷標準（五項中符合三項即可）：①腰圍男性≥90cm、女性≥80cm；②三酸甘油酯≥150 mg/dL；③HDL-C男性<40 mg/dL、女性<50 mg/dL；④血壓≥130/85 mmHg；⑤空腹血糖≥100 mg/dL。代謝症候群是心血管疾病和糖尿病的重要危險因子。",
+    "difficulty": 3,
+    "tags": "代謝症候群,腰圍,慢性病,危險因子"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2024,
+    "source": "泰于版Ch.III 急救",
+    "stem": "依據AHA 2020年指引，成人心肺復甦術（CPR）胸外按壓的正確頻率與深度為何？",
+    "options": [
+      {"key": "A", "text": "80-100次/分，深度3-4公分"},
+      {"key": "B", "text": "100-120次/分，至少5公分（不超過6公分）"},
+      {"key": "C", "text": "100-120次/分，至少6公分"},
+      {"key": "D", "text": "120-140次/分，至少5公分"}
+    ],
+    "answer": "B",
+    "explanation": "AHA 2020年CPR指引：成人胸外按壓頻率100-120次/分，深度至少5公分（約2英吋），但不超過6公分，按壓後需讓胸廓完全回彈（Recoil），避免倚靠在胸廓上。按壓與呼吸比例：有受訓者為30:2；兒童雙人施救為15:2。",
+    "difficulty": 1,
+    "tags": "CPR,AHA,急救,胸外按壓"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "泰于版Ch.III 急救",
+    "stem": "成人、兒童、嬰兒的CPR在「叫叫CABD」流程中，下列何者正確？",
+    "options": [
+      {"key": "A", "text": "嬰兒CPR按壓深度約為胸廓前後徑的1/4"},
+      {"key": "B", "text": "嬰兒CPR按壓深度約為胸廓前後徑的1/3"},
+      {"key": "C", "text": "兒童與成人的按壓深度相同，均為5公分"},
+      {"key": "D", "text": "嬰兒CPR使用單手掌根按壓"}
+    ],
+    "answer": "B",
+    "explanation": "各年齡層CPR按壓深度：成人至少5公分（不超過6公分）；兒童（1歲至青春期）約5公分（至少胸廓前後徑1/3）；嬰兒（未滿1歲）約4公分（胸廓前後徑1/3）。嬰兒使用兩指按壓法（雙指壓），雙人施救可用雙拇指環抱法。",
+    "difficulty": 2,
+    "tags": "CPR,嬰兒,兒童,按壓深度"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "泰于版Ch.III 急救",
+    "stem": "AED（自動體外心臟電擊去顫器）使用步驟正確順序為何？",
+    "options": [
+      {"key": "A", "text": "開機→貼電極片→分析→電擊→繼續CPR"},
+      {"key": "B", "text": "貼電極片→開機→分析→電擊→繼續CPR"},
+      {"key": "C", "text": "開機→分析→貼電極片→電擊→繼續CPR"},
+      {"key": "D", "text": "開機→貼電極片→電擊→分析→繼續CPR"}
+    ],
+    "answer": "A",
+    "explanation": "AED使用步驟：①開機（打開AED蓋子）→②貼電極片（右鎖骨下/左乳下側，兒童用小兒貼片）→③AED自動分析心律（此時停止CPR，離開患者）→④若建議電擊則確認無人接觸後按下電擊鈕→⑤立即繼續CPR（2分鐘後再次分析）。1歲以下嬰兒不建議使用AED，1-8歲用小兒貼片/模式。",
+    "difficulty": 2,
+    "tags": "AED,急救,心臟電擊,步驟"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2022,
+    "source": "泰于版Ch.III 急救",
+    "stem": "哈姆立克法（Heimlich Maneuver）適用於何種情況？對象應為多大以上？",
+    "options": [
+      {"key": "A", "text": "呼吸困難，適用1歲以上"},
+      {"key": "B", "text": "意識不清的異物哽塞，適用所有年齡"},
+      {"key": "C", "text": "有意識的完全性異物哽塞，適用1歲以上"},
+      {"key": "D", "text": "部分性氣道阻塞，適用所有年齡"}
+    ],
+    "answer": "C",
+    "explanation": "哈姆立克法（腹部衝擊法）適用於：有意識、1歲以上、完全性氣道阻塞（無法說話/呼吸/咳嗽）的患者。步驟：站於患者身後→一腳前一腳後→雙手環抱腰部→一手握拳置於肚臍上方劍突下方→另一手握住拳頭→向內向上快速衝擊。嬰兒用背部叩擊法+胸部推壓法；孕婦及肥胖者改用胸部衝擊法。",
+    "difficulty": 2,
+    "tags": "哈姆立克,異物哽塞,急救,氣道阻塞"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2022,
+    "source": "泰于版Ch.III 急症",
+    "stem": "中暑（Heat Stroke）與熱衰竭（Heat Exhaustion）的主要區別，下列何者正確？",
+    "options": [
+      {"key": "A", "text": "中暑患者體溫正常，熱衰竭患者體溫高"},
+      {"key": "B", "text": "中暑患者皮膚乾熱無汗，熱衰竭患者大量出汗"},
+      {"key": "C", "text": "中暑較輕微，熱衰竭較嚴重"},
+      {"key": "D", "text": "兩者處置方式完全相同"}
+    ],
+    "answer": "B",
+    "explanation": "中暑vs熱衰竭：中暑（Heat Stroke）：體溫>40°C、皮膚乾熱無汗（體溫調節失常）、意識改變（譫妄或昏迷）、需緊急降溫（濕冷毛巾+搧風）；熱衰竭（Heat Exhaustion）：體溫接近正常或輕度升高、大量出汗、皮膚濕冷蒼白、意識清醒、處置為移至陰涼處補充電解質。中暑較嚴重，可致死。",
+    "difficulty": 2,
+    "tags": "中暑,熱衰竭,急症,急救"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "泰于版Ch.III 急症",
+    "stem": "燒燙傷嚴重程度評估使用「九分法（Rule of Nines）」，成人單側上肢燒傷面積估算為全身的多少比例？",
+    "options": [
+      {"key": "A", "text": "4.5%"},
+      {"key": "B", "text": "9%"},
+      {"key": "C", "text": "18%"},
+      {"key": "D", "text": "36%"}
+    ],
+    "answer": "B",
+    "explanation": "燒燙傷九分法（成人）：頭頸部9%、每側上肢9%（前臂4.5%+上臂4.5%）、軀幹前面18%、軀幹後面18%、每側下肢18%（大腿9%+小腿含足部9%）、會陰部1%，共100%。燒燙傷急救「沖脫泡蓋送」：沖冷水至少15-20分鐘、脫除衣物（不強行撕除）、泡冷水降溫、蓋上紗布、送醫。",
+    "difficulty": 2,
+    "tags": "燒燙傷,九分法,急救,面積估算"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "甄試常考題",
+    "stem": "依出血部位分類，動脈出血的特徵為何？",
+    "options": [
+      {"key": "A", "text": "血液緩慢流出，顏色暗紅"},
+      {"key": "B", "text": "血液滲出，量少"},
+      {"key": "C", "text": "血液鮮紅，隨心跳呈噴射狀湧出"},
+      {"key": "D", "text": "血液顏色介於鮮紅與暗紅之間，持續流出"}
+    ],
+    "answer": "C",
+    "explanation": "出血分類：動脈出血（最嚴重）：鮮紅色血液、隨心跳呈噴射狀湧出、量多速快；靜脈出血：暗紅色血液、持續流出不呈噴射狀；微血管出血：血液滲出、量少自行凝固。止血方法：直接加壓止血法（最常用）→抬高患肢→指壓止血→止血帶（最後手段，需記錄使用時間）。",
+    "difficulty": 1,
+    "tags": "出血,止血,急救,動脈出血"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2022,
+    "source": "甄試常考題",
+    "stem": "骨折的緊急處置原則，下列何者正確？",
+    "options": [
+      {"key": "A", "text": "開放性骨折應立即將骨頭推回皮膚內"},
+      {"key": "B", "text": "固定夾板時應固定骨折處上下各一個關節"},
+      {"key": "C", "text": "懷疑脊椎骨折時應先扶起患者再送醫"},
+      {"key": "D", "text": "固定前先塗優碘消毒再包紮"}
+    ],
+    "answer": "B",
+    "explanation": "骨折固定原則：固定範圍需涵蓋骨折處「上下各一個關節」。開放性骨折不可將骨頭推回，應以乾淨布料覆蓋。懷疑脊椎骨折應採「原地保持不動」原則，由專業人員固定搬運，避免二次傷害。固定後確認末梢血液循環（5P）：Pain、Pulselessness、Pallor、Paresthesia、Paralysis。",
+    "difficulty": 2,
+    "tags": "骨折,急救,固定,緊急處置"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "泰于版Ch.IV 心理健康",
+    "stem": "自殺防治守門人訓練課程「TALK」步驟，「L」代表什麼？",
+    "options": [
+      {"key": "A", "text": "Listen（傾聽）"},
+      {"key": "B", "text": "Love（關愛）"},
+      {"key": "C", "text": "Lead（引導就醫）"},
+      {"key": "D", "text": "Link（連結資源）"}
+    ],
+    "answer": "C",
+    "explanation": "自殺防治守門人TALK四步驟：T=Tell（告知關心）、A=Ask（詢問自殺意念，直接問「你有想要傷害自己嗎？」）、L=Listen（傾聽而非評判）、K=Keep safe（確保安全，陪伴就醫、移除危險物品）。注意：直接詢問自殺意念「不會」增加自殺風險，反而能讓對方感受到被關心。",
+    "difficulty": 2,
+    "tags": "自殺防治,TALK,守門人,心理健康"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2024,
+    "source": "泰于版Ch.IV 心理健康",
+    "stem": "下列關於「壓力」（Stress）的敘述，哪項正確？",
+    "options": [
+      {"key": "A", "text": "所有壓力都對健康有害，應完全避免"},
+      {"key": "B", "text": "適度的正向壓力（Eustress）可以提升表現"},
+      {"key": "C", "text": "壓力反應只有生理層面的變化"},
+      {"key": "D", "text": "壓力的強度完全由事件本身決定"}
+    ],
+    "answer": "B",
+    "explanation": "心理學家Selye將壓力分為：正向壓力（Eustress）：適度壓力能提升動機與表現，如考試前的適度緊張；負向壓力（Distress）：超過負荷的壓力，影響身心健康。壓力反應包含生理（心跳加速、血壓升高）、心理（焦慮）、行為（睡眠改變）三個層面。壓力強度由「事件」與「個人詮釋」共同決定，同一事件對不同人壓力強度不同。",
+    "difficulty": 2,
+    "tags": "壓力,Eustress,心理健康,Selye"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "泰于版Ch.IV 心理健康",
+    "stem": "憂鬱症（Major Depressive Disorder）的診斷，依DSM-5需符合哪些條件？",
+    "options": [
+      {"key": "A", "text": "情緒低落超過1週，伴隨至少3項症狀"},
+      {"key": "B", "text": "情緒低落超過2週，伴隨至少5項症狀（含核心症狀之一）"},
+      {"key": "C", "text": "情緒低落超過1個月，伴隨至少4項症狀"},
+      {"key": "D", "text": "情緒低落超過6個月，伴隨至少2項症狀"}
+    ],
+    "answer": "B",
+    "explanation": "DSM-5憂鬱症診斷：症狀持續≥2週，9項症狀中符合≥5項，且必含以下至少1項核心症狀：①情緒持續低落，或②對活動失去興趣或愉悅感。其他症狀包含：體重變化、睡眠困難、精神運動遲滯/激動、疲勞、無價值感/罪惡感、注意力下降、反覆出現死亡念頭。",
+    "difficulty": 3,
+    "tags": "憂鬱症,DSM-5,心理健康,診斷標準"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2022,
+    "source": "泰于版Ch.V 健康無癮",
+    "stem": "依台灣《毒品危害防制條例》，下列哪種毒品屬於「第一級毒品」？",
+    "options": [
+      {"key": "A", "text": "大麻"},
+      {"key": "B", "text": "安非他命"},
+      {"key": "C", "text": "海洛因"},
+      {"key": "D", "text": "K他命（愷他命）"}
+    ],
+    "answer": "C",
+    "explanation": "台灣毒品分級：第一級（最嚴重）：海洛因、嗎啡、鴉片、古柯鹼、罌粟；第二級：安非他命、MDMA（搖頭丸）、大麻、PCP；第三級：K他命（愷他命）、FM2（氟硝西泮）；第四級：阿普唑侖（Alprazolam）等苯二氮平類。製造販賣第一級毒品可處無期徒刑或10年以上有期徒刑。",
+    "difficulty": 2,
+    "tags": "毒品分級,毒品危害防制條例,海洛因,成癮"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "泰于版Ch.V 健康無癮",
+    "stem": "「成癮」（Addiction）的三大核心特徵，下列何者「不是」其核心特徵？",
+    "options": [
+      {"key": "A", "text": "耐受性增加（需要更多量才能達到相同效果）"},
+      {"key": "B", "text": "戒斷症狀（停用後出現不適）"},
+      {"key": "C", "text": "強迫性使用（明知有害仍無法控制）"},
+      {"key": "D", "text": "第一次使用就感到愉快"}
+    ],
+    "answer": "D",
+    "explanation": "成癮的三大核心特徵：①耐受性（Tolerance）：需越來越大的劑量才能達到相同效果；②戒斷症狀（Withdrawal）：減量或停用後出現身體不適；③強迫性使用（Compulsive use）：明知有害仍無法控制使用行為。「第一次使用感到愉快」是很多物質的初始效果，但不是成癮的核心特徵，個人體質不同，不一定愉快。",
+    "difficulty": 2,
+    "tags": "成癮,耐受性,戒斷症狀,毒品"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "泰于版Ch.V 健康無癮",
+    "stem": "酒精對人體的影響，下列何者「不正確」？",
+    "options": [
+      {"key": "A", "text": "酒精是中樞神經抑制劑"},
+      {"key": "B", "text": "血液酒精濃度（BAC）0.08%以上在台灣不得駕車"},
+      {"key": "C", "text": "適量飲酒（每日1-2杯）對心血管完全無害，可放心飲用"},
+      {"key": "D", "text": "孕婦飲酒可能導致胎兒酒精症候群（FAS）"}
+    ],
+    "answer": "C",
+    "explanation": "台灣酒後駕車標準：血液酒精濃度（BAC）≥0.03%（吐氣酒精≥0.15mg/L）即違規；≥0.05%即屬刑事責任。台灣法定不得駕車為BAC≥0.05%（而非0.08%，0.08%為美國標準）。酒精是中樞神經抑制劑；孕婦飲酒可致胎兒酒精症候群（FAS）。近年研究顯示即使少量飲酒也有健康風險，無絕對「安全」劑量。",
+    "difficulty": 2,
+    "tags": "酒精,飲酒,成癮,駕車標準"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "泰于版Ch.VI 愛的組曲",
+    "stem": "依據台灣《家庭暴力防治法》，家庭暴力的定義包含哪些？",
+    "options": [
+      {"key": "A", "text": "只包含肢體暴力"},
+      {"key": "B", "text": "肢體暴力和精神暴力"},
+      {"key": "C", "text": "肢體、精神、性暴力及經濟控制"},
+      {"key": "D", "text": "只包含配偶之間的暴力行為"}
+    ],
+    "answer": "C",
+    "explanation": "台灣《家庭暴力防治法》定義家庭成員間實施的身體、精神或經濟上的騷擾、控制、脅迫或其他不法侵害行為，包含：肢體暴力、精神/心理暴力（言語威脅恐嚇）、性暴力（強迫性行為）、經濟控制（控制金錢使對方無法自立）。適用對象包含：配偶、前配偶、同居伴侶、直系血親、兄弟姊妹等。",
+    "difficulty": 2,
+    "tags": "家庭暴力,防治法,性別平等,法規"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2022,
+    "source": "泰于版Ch.VI 愛的組曲",
+    "stem": "台灣《性別平等教育法》規定，學校應設置性別平等教育委員會，委員中女性比例不得少於多少？",
+    "options": [
+      {"key": "A", "text": "1/3"},
+      {"key": "B", "text": "1/2"},
+      {"key": "C", "text": "2/5"},
+      {"key": "D", "text": "3/5"}
+    ],
+    "answer": "B",
+    "explanation": "台灣《性別平等教育法》規定，各級學校性別平等教育委員會成員中，女性委員應占委員總數1/2以上。此法旨在促進性別地位之實質平等，消除性別歧視，保障每位學生在不受性別限制下充分發展潛能。法律另規定學校須有處理性騷擾、性侵害的申訴管道。",
+    "difficulty": 2,
+    "tags": "性別平等教育法,委員會,法規,性別"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2024,
+    "source": "泰于版Ch.VI 愛的組曲",
+    "stem": "HIV（人類免疫缺乏病毒）的主要傳播途徑，下列何者「不是」HIV的傳播方式？",
+    "options": [
+      {"key": "A", "text": "不安全的性行為"},
+      {"key": "B", "text": "共用針頭注射"},
+      {"key": "C", "text": "母嬰垂直傳播"},
+      {"key": "D", "text": "握手、擁抱、共餐"}
+    ],
+    "answer": "D",
+    "explanation": "HIV傳播途徑：①性行為傳播（不安全性交）；②血液傳播（共用針頭、輸血）；③母嬰垂直傳播（懷孕、生產、哺乳）。HIV不會透過：握手、擁抱、接吻（唾液）、共餐、蚊蟲叮咬、咳嗽等日常接觸傳播。感染HIV後若不治療，免疫力下降至CD4<200/μL時進展為愛滋病（AIDS）。",
+    "difficulty": 1,
+    "tags": "HIV,愛滋病,傳播途徑,性健康"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "泰于版Ch.VI 愛的組曲",
+    "stem": "青少年懷孕（Teen Pregnancy）的預防，在健康教育課程中最強調的核心策略為何？",
+    "options": [
+      {"key": "A", "text": "只教導禁慾（Abstinence Only）"},
+      {"key": "B", "text": "全面性教育（Comprehensive Sex Education）"},
+      {"key": "C", "text": "只教導避孕方法"},
+      {"key": "D", "text": "不需要在課堂中討論"}
+    ],
+    "answer": "B",
+    "explanation": "108課綱強調「全面性教育（Comprehensive Sex Education）」，內容涵蓋：人體發展（青春期生理心理變化）、人際關係（健康的戀愛關係）、個人技能（拒絕、溝通、決策）、性行為（包含禁慾、安全性行為、避孕）、性健康（STI預防、篩檢）及社會文化。全面性教育比單一禁慾教育更能有效降低青少年懷孕率。",
+    "difficulty": 2,
+    "tags": "性教育,青少年懷孕,全面性教育,108課綱"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2022,
+    "source": "甄試常考題",
+    "stem": "台灣《學校衛生法》規定，學校護理人員的配置標準（國中以上）為何？",
+    "options": [
+      {"key": "A", "text": "每校至少1名護理師，不論班級數"},
+      {"key": "B", "text": "每24班設置1名護理師，未達24班者得視需要設置"},
+      {"key": "C", "text": "每20班設置1名護理師"},
+      {"key": "D", "text": "每30班設置1名護理師"}
+    ],
+    "answer": "B",
+    "explanation": "《學校衛生法》第7條規定：國民中學以上學校，每24班應至少置護理師1人，未達24班者，得視需要置護理師或護士1人。高級中學以下學校設護理師（士），大學設保健中心護理師。國小規定不同：24班以下設護士，24班以上設護理師。",
+    "difficulty": 2,
+    "tags": "學校衛生法,護理師,法規,配置標準"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "甄試常考題",
+    "stem": "渥太華健康促進憲章（Ottawa Charter, 1986）提出健康促進的五大行動策略，下列何者「不屬於」這五大策略？",
+    "options": [
+      {"key": "A", "text": "建立健康的公共政策（Build healthy public policy）"},
+      {"key": "B", "text": "創造健康的支持環境（Create supportive environments）"},
+      {"key": "C", "text": "提供個人化醫療診治（Provide personalized medical care）"},
+      {"key": "D", "text": "強化社區行動（Strengthen community action）"}
+    ],
+    "answer": "C",
+    "explanation": "1986年渥太華憲章提出健康促進五大行動策略：①建立健康的公共政策、②創造健康的支持環境、③強化社區行動、④發展個人技能（Develop personal skills）、⑤調整衛生服務方向（Reorient health services）。強調健康不只是醫療責任，而是全社會共同責任，以「提供個人化醫療診治」屬於醫療服務，非健康促進五大策略。",
+    "difficulty": 2,
+    "tags": "渥太華憲章,健康促進,五大策略,WHO"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "甄試常考題",
+    "stem": "健康促進學校（Health Promoting School）的六大範疇，下列何者不在其中？",
+    "options": [
+      {"key": "A", "text": "學校政策"},
+      {"key": "B", "text": "學校物質環境"},
+      {"key": "C", "text": "學校考試制度"},
+      {"key": "D", "text": "學校社區關係"}
+    ],
+    "answer": "C",
+    "explanation": "WHO健康促進學校六大範疇：①學校政策（Health policies）、②學校物質環境（Physical environment）、③學校社會環境（Social environment）、④社區關係（Community links）、⑤個人健康技能（Personal health skills）、⑥健康服務（Health services）。「考試制度」並非健促學校六大範疇之一。台灣自1995年推動健康促進學校計畫，結合衛政與教育資源。",
+    "difficulty": 2,
+    "tags": "健康促進學校,六大範疇,WHO,健康促進"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2024,
+    "source": "甄試常考題",
+    "stem": "依馬斯洛（Maslow）需求層次理論，由低至高的正確排列為何？",
+    "options": [
+      {"key": "A", "text": "生理→安全→社會歸屬→尊重→自我實現"},
+      {"key": "B", "text": "安全→生理→社會歸屬→尊重→自我實現"},
+      {"key": "C", "text": "生理→安全→尊重→社會歸屬→自我實現"},
+      {"key": "D", "text": "生理→社會歸屬→安全→尊重→自我實現"}
+    ],
+    "answer": "A",
+    "explanation": "Maslow需求層次（由低至高）：①生理需求（Physiological）：食物、水、睡眠；②安全需求（Safety）：人身安全、穩定；③社會歸屬需求（Love/Belonging）：友誼、愛情、歸屬感；④尊重需求（Esteem）：自尊、成就感、他人尊重；⑤自我實現需求（Self-actualization）：潛能發揮、個人成長。理論認為低層需求滿足後，才追求高層需求。",
+    "difficulty": 2,
+    "tags": "Maslow,需求層次,心理學,自我實現"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "甄試常考題",
+    "stem": "艾瑞克森（Erikson）心理社會發展理論中，青少年期（12-18歲）的核心發展任務為何？",
+    "options": [
+      {"key": "A", "text": "信任vs.不信任（Trust vs. Mistrust）"},
+      {"key": "B", "text": "自主vs.羞愧（Autonomy vs. Shame）"},
+      {"key": "C", "text": "認同vs.角色混亂（Identity vs. Role Confusion）"},
+      {"key": "D", "text": "親密vs.孤立（Intimacy vs. Isolation）"}
+    ],
+    "answer": "C",
+    "explanation": "Erikson八大發展階段：嬰兒期=信任vs.不信任；幼兒期=自主vs.羞愧；學前期=主動vs.罪惡感；學齡期=勤奮vs.自卑；青少年期（12-18歲）=認同vs.角色混亂（探索自我認同是核心任務）；成年早期=親密vs.孤立；中年期=生產vs.停滯；老年期=整合vs.絕望。",
+    "difficulty": 2,
+    "tags": "Erikson,發展理論,青少年,認同"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2022,
+    "source": "甄試常考題",
+    "stem": "皮亞傑（Piaget）認知發展理論中，青少年（約12歲以上）進入哪個階段，能進行抽象思維？",
+    "options": [
+      {"key": "A", "text": "感覺動作期（Sensorimotor）"},
+      {"key": "B", "text": "前運思期（Preoperational）"},
+      {"key": "C", "text": "具體運思期（Concrete Operational）"},
+      {"key": "D", "text": "形式運思期（Formal Operational）"}
+    ],
+    "answer": "D",
+    "explanation": "Piaget認知發展四階段：感覺動作期（0-2歲）：透過感官探索；前運思期（2-7歲）：象徵性思維，自我中心；具體運思期（7-11歲）：邏輯思維但需具體物；形式運思期（12歲以上）：能進行抽象思維、假設推理、系統性思考。青少年進入形式運思期，能理解假設性問題，是健護課程設計的重要依據。",
+    "difficulty": 2,
+    "tags": "Piaget,認知發展,青少年,抽象思維"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "泰于版Ch.II 食品安全",
+    "stem": "台灣食品中常見的「塑化劑事件（2011年）」，主要涉及的違法添加物為何？",
+    "options": [
+      {"key": "A", "text": "甲醛（Formaldehyde）"},
+      {"key": "B", "text": "鄰苯二甲酸酯類（DEHP等）"},
+      {"key": "C", "text": "三聚氰胺（Melamine）"},
+      {"key": "D", "text": "順丁烯二酸（Maleic acid）"}
+    ],
+    "answer": "B",
+    "explanation": "2011年台灣塑化劑事件：業者將工業用鄰苯二甲酸二（2-乙基己基）酯（DEHP，塑化劑）違法添加於食品添加物起雲劑中，污染飲料、果凍等300多項產品。DEHP具環境荷爾蒙特性，干擾內分泌系統，影響生殖發育。三聚氰胺事件為2008年中國毒奶粉事件；順丁烯二酸為2014年澱粉摻偽事件。",
+    "difficulty": 3,
+    "tags": "食安,塑化劑,DEHP,環境荷爾蒙"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2024,
+    "source": "泰于版Ch.II 食品安全",
+    "stem": "食品標示中「有效日期」與「製造日期」的差異，下列何者正確？",
+    "options": [
+      {"key": "A", "text": "兩者相同，只是名稱不同"},
+      {"key": "B", "text": "有效日期是最後可食用的日期，製造日期是生產日期"},
+      {"key": "C", "text": "有效日期過後食物立即變質，絕對不可食用"},
+      {"key": "D", "text": "台灣法規只要求標示製造日期，有效日期為自願性標示"}
+    ],
+    "answer": "B",
+    "explanation": "有效日期（Best Before/Expiration Date）：該日期前食品在正確儲存條件下品質最佳，也是法定標示的最後使用期限。製造日期：食品生產製造完成的日期。台灣食安法規定包裝食品必須標示「有效日期」。有效日期過後食品品質下降，但不代表立即有害，需依食品性質判斷（如蛋糕vs.罐頭）。",
+    "difficulty": 1,
+    "tags": "食品標示,有效日期,製造日期,食安"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2022,
+    "source": "甄試常考題",
+    "stem": "台灣「全民健保」實施年份及其重要意義為何？",
+    "options": [
+      {"key": "A", "text": "1985年，全球首個強制性全民健保"},
+      {"key": "B", "text": "1995年，將分散的各種保險整合為單一全民健保"},
+      {"key": "C", "text": "2000年，開始提供免費醫療服務"},
+      {"key": "D", "text": "1990年，建立分級醫療制度"}
+    ],
+    "answer": "B",
+    "explanation": "台灣全民健康保險於1995年3月1日正式開辦，將原有的勞保、公保、農保等多種保險整合為單一的全民健保制度。目前投保率超過99.9%，是世界上覆蓋率最高的健保制度之一。2002年台灣加入WTO後，健保持續面臨財務壓力，2013年啟動二代健保，新增「補充保費」制度。",
+    "difficulty": 2,
+    "tags": "全民健保,1995年,醫療制度,台灣"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "multiple",
+    "year": 2023,
+    "source": "甄試常考題",
+    "stem": "下列關於「吸菸危害健康」的敘述，哪些正確？（複選）",
+    "options": [
+      {"key": "A", "text": "香菸燃燒產生超過7,000種化學物質，至少70種為已知致癌物"},
+      {"key": "B", "text": "二手菸（被動吸菸）對健康的危害比主動吸菸小，可忽略"},
+      {"key": "C", "text": "吸菸是肺癌最重要的危險因子，約85%肺癌與吸菸有關"},
+      {"key": "D", "text": "戒菸後肺癌風險可逐漸降低，戒菸10-15年後風險接近不吸菸者"},
+      {"key": "E", "text": "電子菸不含焦油，完全無害，可作為戒菸工具"}
+    ],
+    "answer": "A,C,D",
+    "explanation": "A正確：香菸含7,000+種化學物質，70+種致癌物（如苯、亞硝胺、多環芳香烴）。B錯誤：二手菸同樣有害，WHO認定為一級致癌物，與肺癌、心臟病等相關。C正確：吸菸是肺癌最重要危險因子，約85%非小細胞肺癌與吸菸相關。D正確：戒菸後風險逐漸降低，10-15年後肺癌風險接近不吸菸者。E錯誤：電子菸雖無焦油但含尼古丁及其他化學物質，WHO不建議作為戒菸工具，且對青少年有吸引力而造成新的健康問題。",
+    "difficulty": 3,
+    "tags": "吸菸,肺癌,二手菸,電子菸"
+  },
+  {
+    "category_code": "curriculum108",
+    "q_type": "single",
+    "year": 2024,
+    "source": "均悅版Unit01 108課綱",
+    "stem": "108課綱健康與護理課程「核心素養」的英文縮寫「健體-U-A1」中，「U」代表什麼？",
+    "options": [
+      {"key": "A", "text": "Unit（單元）"},
+      {"key": "B", "text": "健康與體育領域（Health and Physical Education Domain）"},
+      {"key": "C", "text": "Universal（通用）"},
+      {"key": "D", "text": "Upper（高中）"}
+    ],
+    "answer": "B",
+    "explanation": "108課綱核心素養編碼規則：「健體-U-A1」→健體=健康與體育領域、U=高中階段（Upper secondary）、A1=第一條自主行動中的「身心素質與自我精進」。其中年段代碼：E=國小、J=國中、U=高中。三面九項中A1-A3屬「自主行動」、B1-B3屬「溝通互動」、C1-C3屬「社會參與」。",
+    "difficulty": 3,
+    "tags": "108課綱,核心素養,編碼,健體"
+  },
+  {
+    "category_code": "curriculum108",
+    "q_type": "single",
+    "year": 2024,
+    "source": "108課綱教學設計",
+    "stem": "「逆向設計（Backward Design，UbD）」教學模式由Wiggins & McTighe提出，其三個設計階段的正確順序為何？",
+    "options": [
+      {"key": "A", "text": "設計學習活動→決定評量→確定學習目標"},
+      {"key": "B", "text": "確定預期學習結果→決定評量證據→規劃學習活動"},
+      {"key": "C", "text": "決定評量→設計學習活動→確定學習目標"},
+      {"key": "D", "text": "確定學習目標→設計學習活動→決定評量"}
+    ],
+    "answer": "B",
+    "explanation": "UbD（Understanding by Design）逆向設計三階段：①確定預期學習結果（Desired Results）：What do we want students to know/do/understand？②決定評量證據（Assessment Evidence）：How will we know if students learned？③規劃學習活動（Learning Plan）：What activities will help students learn？稱為「逆向」是因為先想終點（學習結果），再回推教學設計，確保教學活動與評量都服務於學習目標。",
+    "difficulty": 2,
+    "tags": "逆向設計,UbD,教學設計,108課綱"
+  },
+  {
+    "category_code": "curriculum108",
+    "q_type": "single",
+    "year": 2023,
+    "source": "108課綱評量",
+    "stem": "「真實評量（Authentic Assessment）」相較於傳統紙筆測驗的最大特色為何？",
+    "options": [
+      {"key": "A", "text": "題目更多、範圍更廣"},
+      {"key": "B", "text": "讓學生在真實或貼近真實的情境中展現學習成果"},
+      {"key": "C", "text": "採用更嚴格的計分標準"},
+      {"key": "D", "text": "只評量認知層面的學習"}
+    ],
+    "answer": "B",
+    "explanation": "真實評量（Authentic Assessment）特色：在真實或模擬真實的情境中評量學生，要求學生整合知識、技能與態度來解決問題，而非只回答問題。例如：健護課的「為班級設計健康宣導活動並實際執行」。與傳統評量比較：傳統=記憶再現、單一正確答案；真實評量=建構展現、重視過程與問題解決能力、符合108課綱素養導向精神。",
+    "difficulty": 2,
+    "tags": "真實評量,108課綱,素養導向,教學評量"
+  },
+  {
+    "category_code": "curriculum108",
+    "q_type": "single",
+    "year": 2024,
+    "source": "108課綱差異化教學",
+    "stem": "差異化教學（Differentiated Instruction）的核心理念為何？",
+    "options": [
+      {"key": "A", "text": "讓學生自由選擇不想學的單元"},
+      {"key": "B", "text": "根據學生不同的準備度、興趣和學習方式，調整教學內容、過程和成果"},
+      {"key": "C", "text": "為特殊學生單獨安排另外的課程"},
+      {"key": "D", "text": "降低學習標準以確保所有學生通過"}
+    ],
+    "answer": "B",
+    "explanation": "差異化教學（Carol Ann Tomlinson提出）根據學生的「學習準備度（Readiness）」、「興趣（Interest）」和「學習特質（Learning Profile）」，彈性調整：教什麼（Content）、如何學（Process）、如何展現（Product）。目標是讓每位學生都能在自己的最近發展區（ZPD）進行挑戰性學習。與IEP（個別化教育計畫，用於特殊教育）不同，差異化教學適用於普通班所有學生。",
+    "difficulty": 2,
+    "tags": "差異化教學,108課綱,學習需求,教學策略"
+  },
+  {
+    "category_code": "curriculum108",
+    "q_type": "single",
+    "year": 2023,
+    "source": "108課綱雙語教學",
+    "stem": "CLIL（內容與語言整合學習）教學法的「四C框架」中，「第二個C」代表什麼？",
+    "options": [
+      {"key": "A", "text": "Content（內容）"},
+      {"key": "B", "text": "Cognition（認知）"},
+      {"key": "C", "text": "Communication（溝通）"},
+      {"key": "D", "text": "Culture（文化）"}
+    ],
+    "answer": "B",
+    "explanation": "CLIL四C框架（Coyle, Hood & Marsh, 2010）：①Content（內容）：學科知識；②Cognition（認知）：思考技能（分析、評估、創造等高層思維）；③Communication（溝通）：語言使用（語言學習與互動）；④Culture（文化）：跨文化意識與理解。健護CLIL課程例：以英語教「急救步驟」，同時發展學科知識、批判思考、英語溝通與跨文化健康觀念。",
+    "difficulty": 2,
+    "tags": "CLIL,雙語教學,四C框架,108課綱"
+  },
+  {
+    "category_code": "technician",
+    "q_type": "single",
+    "year": 2022,
+    "source": "四技二專統測",
+    "stem": "護理評估中，格拉斯哥昏迷量表（Glasgow Coma Scale, GCS）滿分為多少分？正常成人應得幾分？",
+    "options": [
+      {"key": "A", "text": "滿分10分，正常8分以上"},
+      {"key": "B", "text": "滿分12分，正常10分以上"},
+      {"key": "C", "text": "滿分15分，正常15分"},
+      {"key": "D", "text": "滿分20分，正常18分以上"}
+    ],
+    "answer": "C",
+    "explanation": "格拉斯哥昏迷量表（GCS）三大項目：眼睛睜開（E）1-4分、語言反應（V）1-5分、肢體運動（M）1-6分，總分3-15分。正常清醒成人為15分，≤8分表示嚴重意識障礙（昏迷）。應用：急性創傷評估、神經狀態監測。評估口訣：「眼451、言語512、運動6→432→1」（最高分）。",
+    "difficulty": 3,
+    "tags": "GCS,格拉斯哥,昏迷,護理評估"
+  },
+  {
+    "category_code": "technician",
+    "q_type": "single",
+    "year": 2023,
+    "source": "四技二專統測",
+    "stem": "護理師執行「五對五確認（Five Rights of Medication Administration）」給藥原則，第一個「確認」為何？",
+    "options": [
+      {"key": "A", "text": "確認藥物正確"},
+      {"key": "B", "text": "確認病人正確"},
+      {"key": "C", "text": "確認劑量正確"},
+      {"key": "D", "text": "確認時間正確"}
+    ],
+    "answer": "B",
+    "explanation": "給藥五對（Five Rights）：①正確的病人（Right Patient）→使用兩種身分識別（如姓名+病歷號）；②正確的藥物（Right Medication）；③正確的劑量（Right Dose）；④正確的時間（Right Time）；⑤正確的途徑（Right Route）。有些機構增加第六對：正確記錄（Right Documentation）。首要確認「正確病人」，避免因識別錯誤導致用藥事故。",
+    "difficulty": 2,
+    "tags": "五對,給藥,護理技術,安全"
+  },
+  {
+    "category_code": "technician",
+    "q_type": "single",
+    "year": 2022,
+    "source": "四技二專統測",
+    "stem": "護理師執行無菌技術（Sterile Technique/Aseptic Technique）時，下列何者正確？",
+    "options": [
+      {"key": "A", "text": "無菌物品的外包裝潮濕時，用吹風機吹乾後仍可使用"},
+      {"key": "B", "text": "無菌盤打開後應立即使用，不得超過1小時"},
+      {"key": "C", "text": "無菌物品置於腰部以下時，應迅速拿起"},
+      {"key": "D", "text": "以70%酒精消毒後的皮膚表面屬無菌狀態"}
+    ],
+    "answer": "B",
+    "explanation": "無菌技術原則：①無菌物品外包裝潮濕=視為污染，需更換；②無菌盤打開後需在1小時內使用，超過即視為污染；③無菌物品腰部以下視為污染（護理師視線範圍以下）；④70%酒精消毒屬清潔消毒，非滅菌，皮膚表面仍有非致病菌，非「無菌」狀態（外科手術部位才需更高標準準備）。",
+    "difficulty": 3,
+    "tags": "無菌技術,護理技術,感染控制,給藥"
+  },
+  {
+    "category_code": "technician",
+    "q_type": "single",
+    "year": 2023,
+    "source": "四技二專統測",
+    "stem": "生命徵象（Vital Signs）測量中，正常成人靜息心率（脈搏）範圍為何？",
+    "options": [
+      {"key": "A", "text": "50-70次/分"},
+      {"key": "B", "text": "60-100次/分"},
+      {"key": "C", "text": "80-120次/分"},
+      {"key": "D", "text": "100-140次/分"}
+    ],
+    "answer": "B",
+    "explanation": "正常成人生命徵象：脈搏60-100次/分（心跳率）；呼吸12-20次/分；體溫36-37.5°C（腋溫，口溫較腋溫高0.5°C，耳溫較腋溫高1°C）；血壓<120/80 mmHg（正常），120-129/<80（偏高）。脈搏測量部位首選橈動脈（手腕），若不規則則測心尖脈。心率<60/分為心搏過緩，>100/分為心搏過速。",
+    "difficulty": 1,
+    "tags": "生命徵象,脈搏,心率,護理評估"
+  },
+  {
+    "category_code": "exam_junior",
+    "q_type": "single",
+    "year": 2022,
+    "source": "國中健教甄試",
+    "stem": "青春期女生初經（Menarche）出現，代表進入哪個發育里程碑？通常發生在幾歲？",
+    "options": [
+      {"key": "A", "text": "乳房開始發育，約8-10歲"},
+      {"key": "B", "text": "第二性徵開始出現，約10歲"},
+      {"key": "C", "text": "性器官發育成熟的標誌之一，約10-16歲"},
+      {"key": "D", "text": "性發育完成，約18歲"}
+    ],
+    "answer": "C",
+    "explanation": "女生青春期發育順序：乳房發育（Breast budding）→陰毛生長→生長加速→初經（Menarche）→腋毛生長。初經通常在乳房發育後2-3年出現，台灣女生平均初經年齡約12-13歲，正常範圍10-16歲。初經出現代表卵巢功能趨於成熟，但前幾年月經週期可能不規則。男生青春期啟動標誌為睪丸增大（約9-14歲）。",
+    "difficulty": 2,
+    "tags": "青春期,初經,發育,性教育"
+  },
+  {
+    "category_code": "exam_junior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "國中健教甄試",
+    "stem": "身體質量指數（BMI）的計算公式為何？台灣成人過重的標準為BMI達到多少？",
+    "options": [
+      {"key": "A", "text": "體重(kg)÷身高(m)；BMI≥25"},
+      {"key": "B", "text": "體重(kg)÷身高(m)²；BMI≥24"},
+      {"key": "C", "text": "體重(kg)÷身高(cm)²；BMI≥24"},
+      {"key": "D", "text": "體重(kg)÷身高(m)²；BMI≥25"}
+    ],
+    "answer": "B",
+    "explanation": "BMI公式：體重(kg)÷身高(m)²。台灣成人BMI判斷標準：<18.5=過輕；18.5-23.9=正常；24-26.9=過重；≥27=肥胖（注意：台灣標準≥24為過重，≥27為肥胖，而非WHO的≥25過重、≥30肥胖，因為亞洲人在較低BMI時即有慢性病風險）。兒童青少年BMI判讀需對照年齡性別的生長曲線百分位。",
+    "difficulty": 1,
+    "tags": "BMI,體重,健康體位,過重"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2024,
+    "source": "甄試常考題",
+    "stem": "台灣衛福部公布的「國人十大死因」（2022年統計），位居第一名的是？",
+    "options": [
+      {"key": "A", "text": "心臟疾病"},
+      {"key": "B", "text": "惡性腫瘤（癌症）"},
+      {"key": "C", "text": "腦血管疾病"},
+      {"key": "D", "text": "糖尿病"}
+    ],
+    "answer": "B",
+    "explanation": "2022年台灣十大死因排名（前五名）：第1名=惡性腫瘤（癌症，連續40年以上蟬聯榜首）、第2名=心臟疾病、第3名=肺炎（COVID-19影響）、第4名=腦血管疾病、第5名=糖尿病。癌症中死亡率最高的為肺癌（男女合計），其次為肝癌、大腸直腸癌、女性乳癌等。此數據常出現在甄試健康促進題型中。",
+    "difficulty": 1,
+    "tags": "十大死因,癌症,衛福部統計,健康促進"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "泰于版Ch.I 高齡照護",
+    "stem": "安寧緩和療護（Palliative Care）的核心精神為何？",
+    "options": [
+      {"key": "A", "text": "積極使用所有醫療手段延長生命"},
+      {"key": "B", "text": "減少病人及家屬的痛苦，提升生命品質，接受死亡為自然過程"},
+      {"key": "C", "text": "放棄治療，讓疾病自然發展"},
+      {"key": "D", "text": "只針對癌症末期病人，不適用其他疾病"}
+    ],
+    "answer": "B",
+    "explanation": "安寧緩和療護（Palliative Care）：以病人與家屬為中心，控制疼痛及其他不適症狀，提供心理、社會、靈性支持，協助病人有尊嚴地度過人生最後階段，並將死亡視為自然生命歷程。台灣《安寧緩和醫療條例》（2000年）保障末期病人拒絕「無效醫療」的權利。「DNR（不施行心肺復甦術）」是安寧緩和的選項之一，不是放棄治療，而是選擇有品質的善終。",
+    "difficulty": 2,
+    "tags": "安寧緩和,善終,DNR,生命教育"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2022,
+    "source": "甄試常考題",
+    "stem": "「健康促進行為模式」中，Pender的「健康促進模式（HPM）」最核心的概念是什麼？",
+    "options": [
+      {"key": "A", "text": "強調恐懼訴求（Fear Appeal）促進健康行為"},
+      {"key": "B", "text": "行為的動力來自「趨向正向目標」而非逃避疾病威脅"},
+      {"key": "C", "text": "健康行為完全由個人意志力決定"},
+      {"key": "D", "text": "社會規範是影響健康行為的唯一因素"}
+    ],
+    "answer": "B",
+    "explanation": "Pender健康促進模式（HPM）：與健康信念模式（HBM）不同，HPM的動機來自「追求健康（正向目標）」而非「害怕疾病（恐懼/威脅）」。影響因素包含：個人特質與經驗、行為相關認知與情感（如自我效能、感知利益、感知障礙）、行動計畫。Pender認為健康行為是主動追求健康福祉的表現，強調正向心理學在健康促進中的重要性。",
+    "difficulty": 3,
+    "tags": "Pender,健康促進模式,健康行為,理論"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "甄試常考題",
+    "stem": "「健康信念模式（Health Belief Model, HBM）」中，影響個人採取預防行為的「感知益處（Perceived Benefits）」指的是什麼？",
+    "options": [
+      {"key": "A", "text": "個人相信自己有能力執行健康行為"},
+      {"key": "B", "text": "個人相信採取某行為可以降低疾病嚴重性或發生機率"},
+      {"key": "C", "text": "個人感受到疾病對健康的威脅"},
+      {"key": "D", "text": "執行健康行為的花費、時間等代價"}
+    ],
+    "answer": "B",
+    "explanation": "健康信念模式（Rosenstock, 1966）核心概念：感知易感性（Perceived Susceptibility）：認為自己有可能得病；感知嚴重性（Perceived Severity）：認為疾病後果嚴重；感知益處（Perceived Benefits）：相信採取行動能有效降低威脅；感知障礙（Perceived Barriers）：採取行動的困難、成本；自我效能（Self-efficacy，後來加入）：相信自己有能力採取行動；行動線索（Cues to Action）：觸發行動的刺激。",
+    "difficulty": 3,
+    "tags": "健康信念模式,HBM,感知益處,健康行為"
+  }
+]

@@ -10,39 +10,35 @@ CATEGORIES = [
 ]
 
 DAILY_PLANS = [
-    # 第1週：生理學與護理基礎
-    (1,  '循環系統與心臟急救', '心臟解剖,CPR,AED,心血管疾病', 20, False, 'exam_senior,exam_junior'),
-    (2,  '呼吸系統與氣道處理', '呼吸解剖,氣道阻塞,人工呼吸,哮喘', 20, False, 'exam_senior,exam_junior'),
-    (3,  '神經系統與意識評估', '神經系統,意識狀態,腦中風,AVPU', 20, False, 'exam_senior,technician'),
-    (4,  '急救原則與止血包紮', '急救原則,止血方法,包紮技術,骨折固定', 20, False, 'exam_senior,exam_junior'),
-    (5,  '傳染病防治與流行病學', '傳染病分類,隔離措施,疫苗接種,三段五級', 20, False, 'exam_senior,technician'),
-    (6,  '護理技術與醫療安全', '護理評估,給藥安全,感染控制,醫療倫理', 20, False, 'exam_senior'),
-    (7,  '第1週錯題複習', '循環,呼吸,神經,急救,傳染病,護理', 15, True,  'exam_senior,exam_junior,technician'),
-    # 第2週：健康教育學科知識
-    (8,  '生長發育與青少年健康', '青春期,生理發育,心理發展,性教育', 20, False, 'exam_senior,curriculum108'),
-    (9,  '慢性病預防與自我管理', '糖尿病,高血壓,癌症篩檢,健康促進', 20, False, 'exam_senior,technician'),
-    (10, '心理健康與壓力調適', '心理健康定義,焦慮憂鬱,自殺防治,正向心理', 20, False, 'exam_senior,curriculum108'),
-    (11, '性別平等與多元健康', '性別平等,LGBTQ,家庭暴力,性騷擾', 20, False, 'exam_senior,curriculum108'),
-    (12, '藥物濫用與成癮防治', '毒品分級,成癮機制,防治策略,酒精菸草', 20, False, 'exam_senior,technician'),
-    (13, '環境衛生與職業健康', '環境污染,職業病,食品安全,飲用水', 20, False, 'exam_senior,technician'),
-    (14, '第2週錯題複習', '生長發育,慢性病,心理健康,性別,藥物,環境', 15, True,  'exam_senior,curriculum108'),
-    # 第3週：108課綱教學法
-    (15, '108課綱核心素養', '核心素養三面九項,素養導向教學,學習遷移', 20, False, 'curriculum108'),
-    (16, '素養導向教學設計', 'UbD逆向設計,真實評量,PBL專題學習', 20, False, 'curriculum108'),
-    (17, 'ICT科技輔助教學', '數位學習,教育科技,Kahoot,Padlet,AI教育', 20, False, 'curriculum108'),
-    (18, '雙語教學CLIL策略', 'CLIL四C,雙語環境,英語授課,學科語言', 20, False, 'curriculum108'),
-    (19, '差異化教學與特殊教育', '差異化策略,IEP,融合教育,多元智能', 20, False, 'curriculum108'),
-    (20, '健康促進學校與社區', '健康促進學校,WHO渥太華憲章,社區衛生', 20, False, 'exam_senior,curriculum108'),
-    (21, '第3週錯題複習', '108課綱,素養,ICT,雙語,差異化,健促', 15, True,  'curriculum108'),
-    # 第4週：模擬衝刺
-    (22, '四技二專統測模擬（一）', '四技二專,護理基礎,解剖生理', 25, False, 'technician'),
-    (23, '四技二專統測模擬（二）', '四技二專,健康促進,急救技能', 25, False, 'technician'),
-    (24, '歷屆高中甄試模擬（一）', '甄試筆試,生理護理,教育理論', 25, False, 'exam_senior'),
-    (25, '歷屆高中甄試模擬（二）', '甄試筆試,慢性病,心理健康,108課綱', 25, False, 'exam_senior,curriculum108'),
-    (26, '口試模擬練習（教學演示）', '教學設計,口試技巧,教案撰寫,板書規劃', 15, False, 'curriculum108'),
+    (1,  '健康基本概念 + 三段五級預防醫學', '健康定義,三段五級,預防醫學,WHO', 20, False, 'exam_senior,curriculum108'),
+    (2,  '循環系統 + 心臟急救 CPR/AED', 'AED,CPR,心肺復甦術,心臟解剖,心血管疾病', 20, False, 'exam_senior,exam_junior'),
+    (3,  '呼吸系統 + 神經系統重點', '呼吸解剖,氣道阻塞,神經系統,意識評估,腦中風', 20, False, 'exam_senior,exam_junior'),
+    (4,  '急救技術 + 止血包紮 + 骨折固定', 'RICE,包紮技術,哈姆立克,嬰兒急救,急救原則,止血方法,異物梗塞,脊椎損傷,骨折固定', 20, False, 'exam_senior,technician'),
+    (5,  '傳染病防治 + 流行病學 + 學校衛生法規', 'AIDS,HIV,三角致病模式,五道防線,傳染病分類,傳染途徑,學校衛生法,愛滋病,流行病學,疫苗接種,肺結核,隔離措施,飛沫傳染', 20, False, 'exam_senior,technician'),
+    (6,  '生長發育 + 青少年健康 + 性別平等', '全人的性,兩性交往,兩性差異,影響健康因素,心理發展,性別平等,性別教育,性教育,生理發育,老化,超高齡社會,遺傳,青春期', 20, False, 'exam_senior,curriculum108'),
+    (7,  '慢性病預防 + 心理健康 + 壓力調適', 'EQ,三多症狀,代謝症候群,全人健康,厭食症,壓力調適,心理健康,情緒智商,慢性病特徵,憂鬱症,焦慮,癌症,糖尿病,腹式呼吸,飲食疾患,高纖維飲食,高血壓', 20, False, 'exam_senior,curriculum108'),
+    (8,  '藥物濫用防治 + 環境衛生 + 職業健康', '低頭族,成癮,拒毒技巧,毒品分級,物質濫用,環境污染,癌症預防,職業健康,職業病,蔬果579,藥物濫用,輪班工作,頸椎,食品安全,飲食健康,體重控制', 20, False, 'exam_senior,technician'),
+    (9,  '108課綱核心素養 + 素養導向教學設計', '核心素養,三面九項,素養導向,UbD,PBL', 20, False, 'curriculum108'),
+    (10, 'ICT科技輔助 + 雙語CLIL + 差異化教學', 'ICT,數位學習,CLIL,雙語教學,差異化,IEP', 20, False, 'curriculum108'),
+    (11, '健康促進學校 + WHO渥太華憲章 + 社區衛生', 'WHO,五大行動策略,健康促進,健康促進學校,健康定義,全人健康,渥太華憲章,社區衛生,自尊,自我概念', 20, False, 'exam_senior,curriculum108'),
+    (12, '四技二專護理技術 + 護理評估', '四技二專,護理技術,給藥安全,感染控制,護理評估', 25, False, 'technician'),
+    (13, '【第一輪錯題總複習】', '所有錯題,間隔複習,重點整理', 15, True, 'exam_senior,exam_junior,technician,curriculum108'),
+    (14, '【第二輪】生理解剖加強 + 急救重點攻錯', 'CPR,急救,循環,呼吸,神經', 25, False, 'exam_senior,technician'),
+    (15, '【第二輪】傳染病 + 慢性病 + 法規深化', '傳染病,慢性病,學校衛生法,三段五級', 25, False, 'exam_senior,exam_junior'),
+    (16, '【第二輪】青少年健康 + 心理健康深化', '乳糖不耐症,佛洛姆,心理健康,愛的藝術,憂鬱,自殺防治,貧血,鐵質,青少年,飲食障礙', 25, False, 'exam_senior,curriculum108'),
+    (17, '【第二輪】性別平等 + 藥物防治加強', '性別平等,LGBTQ,家庭暴力,藥物濫用', 25, False, 'exam_senior,curriculum108'),
+    (18, '【第二輪】108課綱教學設計深化 + 口試練習', '素養導向,教學設計,口試技巧,教案撰寫', 20, False, 'curriculum108'),
+    (19, '【第二輪】雙語CLIL + 差異化教學深化 + 口試', 'CLIL,雙語教學,差異化,融合教育,口試練習', 20, False, 'curriculum108'),
+    (20, '高中甄試歷屆模擬（一）', '甄試筆試,生理護理,教育理論,法規', 30, False, 'exam_senior'),
+    (21, '高中甄試歷屆模擬（二）', '甄試筆試,慢性病,心理,108課綱', 30, False, 'exam_senior,curriculum108'),
+    (22, '四技二專統測模擬衝刺', '四技二專,護理基礎,健康促進,急救', 30, False, 'technician'),
+    (23, '口試申論題集中練習', '3R3E,口試模擬,情境問答,教學演示,教案,板書,環境永續,綠色消費', 15, False, 'curriculum108'),
+    (24, '個人弱點強化 + 錯題重點複習', '弱點科目,間隔複習,錯題本', 25, True, 'exam_senior,curriculum108,technician'),
+    (25, '全科模擬考（完整模擬）', '全科模擬,甄試筆試,計時練習', 35, False, 'exam_senior,exam_junior,technician,curriculum108'),
+    (26, '【考前最後一天】重點回顧 + 心態調整', '重點整理,錯題回顧,心態調整,考試技巧', 20, False, 'exam_senior,curriculum108'),
     (27, '口試模擬練習（情境問答）', '班級經營,突發狀況,護理倫理,溝通技巧', 15, False, 'exam_senior'),
     (28, '弱點科目強化', '個人弱點標籤', 25, False, 'exam_senior,curriculum108'),
-    (29, '全科錯題總複習', '所有錯題,間隔複習,重點整理', 30, True,  'exam_senior,exam_junior,technician,curriculum108'),
+    (29, '全科錯題總複習', '所有錯題,間隔複習,重點整理', 30, True, 'exam_senior,exam_junior,technician,curriculum108'),
     (30, '考前最後衝刺', '重點回顧,心態調整,模擬考試', 20, False, 'exam_senior,curriculum108'),
 ]
 
@@ -496,21 +492,30 @@ def seed_all(app, db_instance):
 
         # Seed questions (only if empty)
         if Question.query.count() == 0:
-            for q_data in SAMPLE_QUESTIONS:
-                cat = Category.query.filter_by(code=q_data['category_code']).first()
+            import os
+            base_dir = os.path.dirname(os.path.abspath(__file__))
+            export_path = os.path.join(base_dir, 'data', 'all_questions_export.json')
+            if os.path.exists(export_path):
+                with open(export_path, encoding='utf-8') as f:
+                    all_questions = json.load(f)
+            else:
+                all_questions = SAMPLE_QUESTIONS
+            for q_data in all_questions:
+                q_data = dict(q_data)
+                cat = Category.query.filter_by(code=q_data.get('category_code', 'exam_senior')).first()
                 if not cat:
                     continue
                 key_points = q_data.pop('key_points', [])
                 options = q_data.pop('options', [])
-                category_code = q_data.pop('category_code')
+                q_data.pop('category_code', None)
                 q = Question(
                     category_id=cat.id,
-                    q_type=q_data['q_type'],
+                    q_type=q_data.get('q_type', 'single'),
                     year=q_data.get('year'),
                     source=q_data.get('source', ''),
                     stem=q_data['stem'],
                     options_json=json.dumps(options, ensure_ascii=False),
-                    answer=q_data['answer'],
+                    answer=q_data.get('answer', ''),
                     key_points_json=json.dumps(key_points, ensure_ascii=False),
                     explanation=q_data.get('explanation', ''),
                     difficulty=q_data.get('difficulty', 2),

@@ -1,0 +1,121 @@
+[
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2024,
+    "source": "生長發育考點",
+    "stem": "艾瑞克森（Erik Erikson）的心理社會發展理論中，青春期（約12～18歲）的發展危機（developmental crisis）為何？",
+    "options": [
+      {"key": "A", "text": "信任vs不信任（Trust vs Mistrust）"},
+      {"key": "B", "text": "自主vs羞恥懷疑（Autonomy vs Shame and Doubt）"},
+      {"key": "C", "text": "認同vs角色混淆（Identity vs Role Confusion）"},
+      {"key": "D", "text": "親密vs孤立（Intimacy vs Isolation）"}
+    ],
+    "answer": "C",
+    "explanation": "艾瑞克森八個心理社會發展階段：（1）0-1歲：信任vs不信任；（2）1-3歲：自主vs羞恥懷疑；（3）3-6歲：主動vs罪惡感（Initiative vs Guilt）；（4）6-12歲：勤勉vs自卑（Industry vs Inferiority）；（5）12-18歲：認同vs角色混淆（Identity vs Role Confusion）→青少年重要任務；（6）18-40歲：親密vs孤立；（7）40-65歲：生產vs停滯（Generativity vs Stagnation）；（8）65歲以上：自我整合vs絕望（Ego Integrity vs Despair）。",
+    "difficulty": 2,
+    "tags": "艾瑞克森,發展理論,青春期,心理社會"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "生長發育考點",
+    "stem": "皮亞傑（Jean Piaget）認知發展理論中，青少年期（約12歲以上）進入哪個認知發展階段？其特徵為何？",
+    "options": [
+      {"key": "A", "text": "感覺動作期（Sensorimotor）：藉由感官和動作探索環境"},
+      {"key": "B", "text": "前運思期（Preoperational）：開始使用語言符號，但自我中心"},
+      {"key": "C", "text": "具體運思期（Concrete Operational）：能就具體事物進行邏輯思考"},
+      {"key": "D", "text": "形式運思期（Formal Operational）：能進行抽象思考、假設演繹推理"}
+    ],
+    "answer": "D",
+    "explanation": "皮亞傑四個認知發展階段：（1）感覺動作期0-2歲：感官探索、物體恆存；（2）前運思期2-7歲：象徵思考、自我中心、守恆概念未建立；（3）具體運思期7-11歲：守恆概念建立、能就具體事物邏輯推理、去除自我中心；（4）形式運思期12歲以上：抽象思考、假設演繹、系統推理。健護考試常考：「守恆（conservation）」—液體倒入不同形狀容器量不變，約7歲建立；「自我中心（egocentrism）」—前運思期特徵。",
+    "difficulty": 2,
+    "tags": "皮亞傑,認知發展,形式運思期,發展理論"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2022,
+    "source": "生長發育考點",
+    "stem": "柯爾伯格（Lawrence Kohlberg）道德發展理論，青少年前期（約10-13歲）多處於哪個階段？其特徵為何？",
+    "options": [
+      {"key": "A", "text": "前習俗道德期（Preconventional）：以避免懲罰或獲得獎賞為依據"},
+      {"key": "B", "text": "習俗道德期第3層次：以符合他人期望、做個好孩子為標準"},
+      {"key": "C", "text": "後習俗道德期（Postconventional）：以普世倫理原則為依據"},
+      {"key": "D", "text": "習俗道德期第4層次：以遵守社會規則與法律為標準"}
+    ],
+    "answer": "B",
+    "explanation": "柯爾伯格三期六層次：前習俗（10歲前）→第1層次（服從避罰）、第2層次（工具性互利）；習俗道德期（10-13歲及多數成人）→第3層次（好孩子取向，獲得認同）、第4層次（法律秩序取向）；後習俗道德期（少數成人才達到）→第5層次（社會契約取向）、第6層次（普世倫理原則）。健護考試重點：青少年多在習俗道德期第3-4層次；健康教育應配合其同儕認同需求。",
+    "difficulty": 2,
+    "tags": "柯爾伯格,道德發展,青少年,發展理論"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2021,
+    "source": "生長發育考點",
+    "stem": "佛洛伊德（Sigmund Freud）心理性發展理論中，青春期對應哪個階段？",
+    "options": [
+      {"key": "A", "text": "口腔期（Oral Stage）：0-1歲"},
+      {"key": "B", "text": "潛伏期（Latency Stage）：6-12歲"},
+      {"key": "C", "text": "性器期（Phallic Stage）：3-6歲"},
+      {"key": "D", "text": "生殖期（Genital Stage）：12歲以上"}
+    ],
+    "answer": "D",
+    "explanation": "佛洛伊德心理性發展五階段：（1）口腔期0-1歲：性感帶為嘴巴，固著→依賴/吸菸；（2）肛門期1-3歲：性感帶為肛門，固著→強迫/控制；（3）性器期（陽具期）3-6歲：性感帶為生殖器，伊底帕斯/厄勒克特拉情結；（4）潛伏期6-12歲：性衝動被壓抑，專注學習與同性友誼；（5）生殖期12歲以上：青春期性慾再現，建立親密異性關係。佛洛伊德理論現今較少直接考，但健護甄試仍考各理論家的對應年齡段。",
+    "difficulty": 2,
+    "tags": "佛洛伊德,心理發展,青春期,發展理論"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "生長發育考點",
+    "stem": "女生青春期發育，最早出現的第二性徵（secondary sex characteristics）通常是？",
+    "options": [
+      {"key": "A", "text": "月經初潮（menarche）"},
+      {"key": "B", "text": "乳房發育（breast development / thelarche）"},
+      {"key": "C", "text": "陰毛出現（pubarche）"},
+      {"key": "D", "text": "腋毛出現"}
+    ],
+    "answer": "B",
+    "explanation": "女生青春期發育順序（約8-13歲開始）：（1）乳房發育（thelarche）最先出現，約8-11歲；（2）陰毛出現（pubarche）；（3）身高快速增長（growth spurt）；（4）月經初潮（menarche）通常最後出現，在乳房發育後約2-3年，台灣女生平均約12歲。男生發育順序：睪丸增大→陰莖增大→陰毛出現→身高快速增長→精子成熟/遺精→腋毛→痤瘡/變聲。",
+    "difficulty": 2,
+    "tags": "青春期,第二性徵,生長發育"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2022,
+    "source": "生長發育考點",
+    "stem": "馬斯洛（Abraham Maslow）需求層次理論中，「安全與安全感的需求」屬於哪個層次？若一個人缺乏食物，在滿足哪個需求之前無法有效追求愛與歸屬感？",
+    "options": [
+      {"key": "A", "text": "第三層：愛與歸屬感；必須先滿足第一層生理需求"},
+      {"key": "B", "text": "第二層：安全需求；必須先滿足第一層生理需求再滿足第二層"},
+      {"key": "C", "text": "第四層：尊重需求；必須先滿足第一到第三層"},
+      {"key": "D", "text": "第五層：自我實現；可跳過其他層次"}
+    ],
+    "answer": "B",
+    "explanation": "馬斯洛需求層次（由低至高）：第1層—生理需求（食物、水、空氣、睡眠）；第2層—安全需求（人身安全、工作保障、健康）；第3層—愛與歸屬感（友情、愛情、社群）；第4層—尊重需求（自尊、成就、他人尊重）；第5層—自我實現（發揮潛能）。基本原則：低層需求必須先獲得基本滿足，才能有效追求更高層需求。健護應用：理解學生行為時，先確認其基本安全需求是否被滿足。",
+    "difficulty": 1,
+    "tags": "馬斯洛,需求層次,發展理論,健康教育"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2024,
+    "source": "生長發育考點",
+    "stem": "台灣學校推動「性別平等教育」，依「性別平等教育法」，國中階段（7-9年級）必須包含哪些核心議題？",
+    "options": [
+      {"key": "A", "text": "生理衛生為主，不包含性傾向議題"},
+      {"key": "B", "text": "性別角色、性別認同、性傾向、性別刻板印象、性騷擾防治"},
+      {"key": "C", "text": "僅限同性婚姻及法律知識"},
+      {"key": "D", "text": "生殖生理與避孕方法為主要內容"}
+    ],
+    "answer": "B",
+    "explanation": "依台灣「性別平等教育法」（2004年通過，2023年修訂），各教育階段均應涵蓋：性別角色（gender roles）、性別認同（gender identity）、性傾向（sexual orientation）、性別刻板印象（gender stereotypes）、性騷擾/性侵害/性霸凌防治。重要概念：（1）生理性別（sex）：染色體/生殖器官；（2）性別認同（gender identity）：自我認同的性別；（3）性傾向（sexual orientation）：對他人的情感/性吸引。健護教師應具備此知識以正確引導學生。",
+    "difficulty": 2,
+    "tags": "性別平等,性教育,性別認同,法規"
+  }
+]

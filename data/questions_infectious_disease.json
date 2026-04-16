@@ -1,0 +1,121 @@
+[
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2024,
+    "source": "傳染病考點",
+    "stem": "傳染鏈（Chain of Infection）的六大環節，正確順序為何？",
+    "options": [
+      {"key": "A", "text": "病原體→宿主→傳染窩→傳播途徑→進入門戶→感受性宿主"},
+      {"key": "B", "text": "病原體→傳染窩→離開門戶→傳播途徑→進入門戶→感受性宿主"},
+      {"key": "C", "text": "傳染窩→病原體→傳播途徑→離開門戶→進入門戶→感受性宿主"},
+      {"key": "D", "text": "病原體→宿主→傳播途徑→進入門戶→離開門戶→感受性宿主"}
+    ],
+    "answer": "B",
+    "explanation": "傳染鏈六環節（Chain of Infection）：（1）病原體（Infectious Agent）：細菌、病毒、真菌等；（2）傳染窩/病原庫（Reservoir）：病原體存活繁殖的場所（人、動物、土壤、水）；（3）離開門戶（Portal of Exit）：病原體離開傳染窩的途徑（呼吸道、消化道、血液、皮膚）；（4）傳播途徑（Mode of Transmission）：直接接觸、飛沫、空氣、媒介、蟲媒；（5）進入門戶（Portal of Entry）：病原體進入新宿主的途徑；（6）感受性宿主（Susceptible Host）。切斷任一環節可預防感染傳播。",
+    "difficulty": 2,
+    "tags": "傳染鏈,傳染病,流行病學"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "傳染病考點",
+    "stem": "依台灣傳染病防治法，下列哪一類疾病需要在「24小時內」通報主管機關？",
+    "options": [
+      {"key": "A", "text": "第一類法定傳染病（如霍亂、鼠疫、天花）"},
+      {"key": "B", "text": "第二類法定傳染病（如登革熱、麻疹）"},
+      {"key": "C", "text": "第三類法定傳染病（如結核病）"},
+      {"key": "D", "text": "第四類法定傳染病（新興傳染病）"}
+    ],
+    "answer": "A",
+    "explanation": "台灣傳染病分類及通報時限：（1）第一類：需即時通報（24小時內），包含：鼠疫、霍亂、天花、嚴重急性呼吸道症候群（SARS）、天花、埃博拉等（具大規模流行潛力）；（2）第二類：需於24小時內通報，包含：登革熱、麻疹、流行性腦脊髓膜炎等；（3）第三類：需於1週內通報，包含：結核病、漢生病、日本腦炎等；（4）第四類：中央主管機關公告→即時通報；（5）第五類：新興傳染病，中央公告處理方式。注意：不同版本考題對第一/二類時限有所差異，重點記「第一類最嚴重、最緊急」。",
+    "difficulty": 2,
+    "tags": "法定傳染病,傳染病分類,通報,傳染病"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2022,
+    "source": "傳染病考點",
+    "stem": "台灣兒童預防接種時程，B型肝炎疫苗（HBV vaccine）的完整接種時程為？",
+    "options": [
+      {"key": "A", "text": "出生24小時內、2個月、6個月，共3劑"},
+      {"key": "B", "text": "2個月、4個月、6個月，共3劑"},
+      {"key": "C", "text": "出生後、1個月、6個月，共3劑"},
+      {"key": "D", "text": "出生後、2個月、4個月、6個月，共4劑"}
+    ],
+    "answer": "C",
+    "explanation": "台灣B型肝炎疫苗（HBV）接種時程（0-1-6方案）：第1劑—出生24小時內；第2劑—出生後1個月；第3劑—出生後6個月。共3劑。台灣其他重要疫苗時程：（1）卡介苗（BCG）：出生後儘早接種；（2）五合一疫苗（DTaP+IPV+Hib）：2、4、6個月，18個月追加；（3）麻疹腮腺炎德國麻疹（MMR）：12個月、滿5歲；（4）水痘疫苗：12-15個月；（5）日本腦炎：15個月起；（6）HPV（人乳突病毒）：國小5年級女生常規接種。",
+    "difficulty": 2,
+    "tags": "疫苗,B型肝炎,接種時程,傳染病"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2021,
+    "source": "傳染病考點",
+    "stem": "愛滋病（AIDS）的病原體HIV主要攻擊哪種免疫細胞？AIDS的診斷標準（CD4細胞數）為何？",
+    "options": [
+      {"key": "A", "text": "B淋巴球；CD4<100 cells/μL"},
+      {"key": "B", "text": "CD4+ T淋巴球（T helper cells）；CD4<200 cells/μL 或出現愛滋相關伺機性感染"},
+      {"key": "C", "text": "自然殺手細胞（NK cells）；CD4<300 cells/μL"},
+      {"key": "D", "text": "巨噬細胞；CD4<500 cells/μL"}
+    ],
+    "answer": "B",
+    "explanation": "HIV（Human Immunodeficiency Virus）：主要攻擊CD4+ T淋巴球（T helper / CD4 cells）。AIDS（Acquired Immunodeficiency Syndrome）診斷標準：CD4<200 cells/μL 或發生愛滋相關伺機性感染/腫瘤（如肺囊蟲肺炎、卡波西氏肉瘤）。傳播途徑：血液（輸血/共用針頭）、性行為、母嬰垂直傳播。不傳播途徑：日常接觸（握手、擁抱、共食、汗液、淚液、蚊蟲叮咬）。台灣現況：HIV感染者可服用抗病毒藥（ART）達到病毒量測不到（U=U，測不到=無傳播力）。",
+    "difficulty": 2,
+    "tags": "愛滋病,HIV,CD4,傳染病"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "傳染病考點",
+    "stem": "傳染病的傳播途徑中，「空氣傳播（Airborne Transmission）」與「飛沫傳播（Droplet Transmission）」的主要區別依據為何？",
+    "options": [
+      {"key": "A", "text": "飛沫顆粒>5微米，傳播距離<1公尺；空氣傳播顆粒≤5微米，可長時間懸浮在空氣中"},
+      {"key": "B", "text": "飛沫傳播無法穿越口罩；空氣傳播需穿越牆壁"},
+      {"key": "C", "text": "空氣傳播距離<2公尺；飛沫傳播可遠距離傳播"},
+      {"key": "D", "text": "兩者無差別，都是透過呼吸道傳播"}
+    ],
+    "answer": "A",
+    "explanation": "傳播途徑詳解：（1）飛沫傳播（Droplet）：顆粒>5微米，傳播距離<1-2公尺，快速沉降；代表疾病：流感、百日咳、腺病毒、新冠肺炎（主要途徑）。防護：外科口罩即可；（2）空氣傳播（Airborne）：顆粒≤5微米（飛沫核），可長時間懸浮在空氣中，遠距離傳播；代表疾病：結核病（TB）、麻疹、水痘。防護：N95口罩、負壓隔離室；（3）接觸傳播：直接（皮膚黏膜接觸）或間接（汙染物品）；（4）媒介物傳播：水、食物、血液；（5）蟲媒傳播：蚊、蜱。",
+    "difficulty": 2,
+    "tags": "傳播途徑,飛沫,空氣傳播,傳染病"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2020,
+    "source": "傳染病考點",
+    "stem": "登革熱的傳播媒介主要為何？其潛伏期大約為多久？",
+    "options": [
+      {"key": "A", "text": "班氏瘧蚊（Anopheles mosquito）；潛伏期14-21天"},
+      {"key": "B", "text": "埃及斑蚊及白線斑蚊（Aedes aegypti / albopictus）；潛伏期3-14天（平均4-7天）"},
+      {"key": "C", "text": "家蚊（Culex mosquito）；潛伏期1-3天"},
+      {"key": "D", "text": "沙蠅（Sandfly）；潛伏期7-21天"}
+    ],
+    "answer": "B",
+    "explanation": "登革熱（Dengue Fever）：病原體：登革病毒（DENV，血清型1-4型）；媒介：埃及斑蚊（主要）及白線斑蚊；潛伏期：3-14天，平均4-7天；症狀：突發高燒、頭痛、後眼窩痛、肌肉關節痛（breakbone fever）、皮疹；嚴重：登革出血熱（DHF）→血小板驟降、出血；無特效藥，支持性治療。台灣：主要在南部，6-10月為高峰。防治：清除積水（4滴水即可孳生）、個人防護（長袖、防蚊液）。重要：無跨人傳播，必須透過蚊子。",
+    "difficulty": 1,
+    "tags": "登革熱,蟲媒傳播,傳染病"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2022,
+    "source": "傳染病考點",
+    "stem": "結核病（Tuberculosis）的傳播途徑及隔離措施為何？",
+    "options": [
+      {"key": "A", "text": "飛沫傳播；需外科口罩及一般隔離即可"},
+      {"key": "B", "text": "空氣傳播（飛沫核）；需負壓隔離室（Airborne Precautions），醫護人員需穿戴N95口罩"},
+      {"key": "C", "text": "接觸傳播；需手套及隔離衣即可"},
+      {"key": "D", "text": "血液傳播；需標準防護措施"}
+    ],
+    "answer": "B",
+    "explanation": "結核病（TB）：病原體：結核分枝桿菌（Mycobacterium tuberculosis）；傳播：空氣傳播（飛沫核≤5微米，懸浮數小時）；隔離：空氣傳播防護措施（Airborne Precautions）＝負壓隔離室（6-12次/小時換氣）＋N95口罩；潛伏期：感染後多數形成潛伏性結核（LTBI），終生約10%發病；治療：DOTS（直接觀察治療短程方案），標準療程6-9個月（INH+RIF+PZA+EMB）；台灣：屬第三類法定傳染病，7天內通報。",
+    "difficulty": 2,
+    "tags": "結核病,TB,空氣傳播,隔離,傳染病"
+  }
+]

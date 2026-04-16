@@ -1,0 +1,240 @@
+[
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "護理基礎考點",
+    "stem": "正常成人口腔體溫（oral temperature）的正常範圍為何？",
+    "options": [
+      {"key": "A", "text": "35.5～36.5°C"},
+      {"key": "B", "text": "36.0～37.2°C"},
+      {"key": "C", "text": "36.5～37.5°C"},
+      {"key": "D", "text": "37.0～38.0°C"}
+    ],
+    "answer": "B",
+    "explanation": "成人口腔體溫正常範圍：36.0～37.2°C。各部位正常值：腋溫（axillary）35.8～37.0°C（比口溫低0.2～0.5°C）；直腸溫（rectal）36.5～37.5°C（比口溫高0.2～0.5°C）；耳膜溫（tympanic）35.8～38.0°C。體溫>38°C稱發燒（fever），>40°C為高熱，>41°C有生命危險。",
+    "difficulty": 1,
+    "tags": "生命徵象,體溫,護理基礎"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2022,
+    "source": "護理基礎考點",
+    "stem": "測量腋下體溫時，體溫計應放置多久才能取出讀值？",
+    "options": [
+      {"key": "A", "text": "3分鐘"},
+      {"key": "B", "text": "5分鐘"},
+      {"key": "C", "text": "7分鐘"},
+      {"key": "D", "text": "10分鐘"}
+    ],
+    "answer": "D",
+    "explanation": "各部位體溫計放置時間：口腔（舌下）3～5分鐘、腋下（axillary）10分鐘、直腸（rectum）2～3分鐘。腋下因為不是密閉腔，散熱較多，需要較長時間達到平衡，故需10分鐘。注意：測量前若有劇烈運動、飲食、沐浴，需休息20～30分鐘後再測。",
+    "difficulty": 1,
+    "tags": "生命徵象,體溫,腋溫,護理基礎"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2021,
+    "source": "護理基礎考點",
+    "stem": "測量成人脈搏時，一般計數脈搏幾秒後乘以換算倍數？若發現脈搏不規則，則應計數多久？",
+    "options": [
+      {"key": "A", "text": "數15秒×4；不規則時數30秒×2"},
+      {"key": "B", "text": "數30秒×2；不規則時數60秒×1"},
+      {"key": "C", "text": "數15秒×4；不規則時數60秒×1"},
+      {"key": "D", "text": "數30秒×2；不規則時數30秒×2再加5"}
+    ],
+    "answer": "B",
+    "explanation": "正常脈搏計數方法：數30秒×2（即乘以2換算為每分鐘次數）。若脈律不整（irregular pulse）、心跳過快或過慢，則應完整計數60秒，以確保準確性。成人正常脈搏：60～100次/分；嬰兒：120～160次/分；兒童：80～120次/分。脈搏>100次/分稱心搏過速（tachycardia），<60次/分稱心搏過緩（bradycardia）。",
+    "difficulty": 2,
+    "tags": "生命徵象,脈搏,護理基礎"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2020,
+    "source": "護理基礎考點",
+    "stem": "成人正常血壓值為何？依美國心臟學會（AHA）2017年新標準，收縮壓120～129 mmHg、舒張壓<80 mmHg屬於哪個分級？",
+    "options": [
+      {"key": "A", "text": "正常血壓（Normal）"},
+      {"key": "B", "text": "血壓升高（Elevated）"},
+      {"key": "C", "text": "第一期高血壓（Stage 1 HTN）"},
+      {"key": "D", "text": "第二期高血壓（Stage 2 HTN）"}
+    ],
+    "answer": "B",
+    "explanation": "AHA 2017血壓分類：正常（Normal）<120/<80；血壓升高（Elevated）120-129/<80；第一期高血壓（Stage 1）130-139/80-89；第二期高血壓（Stage 2）≥140/≥90。台灣高血壓學會定義高血壓：收縮壓≥140 mmHg或舒張壓≥90 mmHg。測量血壓注意事項：坐姿安靜休息5分鐘、手臂與心臟同高、選擇適當袖帶（袖帶氣囊寬度應為上臂周徑的40%）。",
+    "difficulty": 2,
+    "tags": "生命徵象,血壓,高血壓,護理基礎"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2022,
+    "source": "護理基礎考點",
+    "stem": "測量血壓時，若袖帶（cuff）綁得太鬆或使用過小的袖帶，對測量結果有何影響？",
+    "options": [
+      {"key": "A", "text": "測得血壓值偏低"},
+      {"key": "B", "text": "測得血壓值偏高"},
+      {"key": "C", "text": "測得收縮壓偏高但舒張壓偏低"},
+      {"key": "D", "text": "測得收縮壓偏低但舒張壓偏高"}
+    ],
+    "answer": "B",
+    "explanation": "血壓測量誤差原因：（1）袖帶太鬆或袖帶太小→測得血壓偏高；（2）袖帶太緊或袖帶太大→測得血壓偏低；（3）手臂高於心臟→偏低；（4）手臂低於心臟→偏高；（5）放氣太快→舒張壓偏低；（6）重複充氣未完全放鬆→偏高。記憶口訣：「太小太鬆偏高，太大太緊偏低」。",
+    "difficulty": 2,
+    "tags": "生命徵象,血壓,測量誤差,護理基礎"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "護理基礎考點",
+    "stem": "給藥安全的「五對五確」中，下列何者不屬於五對（Five Rights of Medication Administration）？",
+    "options": [
+      {"key": "A", "text": "正確的病人（Right Patient）"},
+      {"key": "B", "text": "正確的診斷（Right Diagnosis）"},
+      {"key": "C", "text": "正確的劑量（Right Dose）"},
+      {"key": "D", "text": "正確的時間（Right Time）"}
+    ],
+    "answer": "B",
+    "explanation": "給藥安全五對（5R）：正確的病人（Right Patient）、正確的藥物（Right Drug）、正確的劑量（Right Dose）、正確的時間（Right Time）、正確的途徑/給藥路徑（Right Route）。「正確的診斷」不屬於五對。現代有擴充至七對：加上正確的記錄（Right Documentation）、正確的反應（Right Response）。台灣護理考試多考五對。",
+    "difficulty": 1,
+    "tags": "給藥安全,五對,用藥安全,護理基礎"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2021,
+    "source": "護理基礎考點",
+    "stem": "給藥前「三讀五對」中，三讀是指何時核對？",
+    "options": [
+      {"key": "A", "text": "取藥時、準備藥物時、給藥後"},
+      {"key": "B", "text": "取藥前、準備藥物時（取藥後）、放回藥品時"},
+      {"key": "C", "text": "接收醫囑時、準備藥物時、給藥前"},
+      {"key": "D", "text": "準備藥物時、給藥前、給藥後"}
+    ],
+    "answer": "B",
+    "explanation": "三讀：第一讀—取藥前看藥名（從藥架取藥時）；第二讀—準備藥物時（取出藥物後核對）；第三讀—放回藥品或丟棄包裝時（給藥前再確認）。五對：正確病人、正確藥物、正確劑量、正確時間、正確途徑。給藥確認病人身分應至少使用兩種辨識方式（如姓名+病歷號或床號）。",
+    "difficulty": 2,
+    "tags": "給藥安全,三讀五對,護理基礎"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2022,
+    "source": "護理基礎考點",
+    "stem": "關於無菌技術（Sterile Technique / Aseptic Technique），下列原則何者正確？",
+    "options": [
+      {"key": "A", "text": "無菌物品若已拆封但未使用，可放回後下次繼續使用"},
+      {"key": "B", "text": "無菌野（sterile field）的邊緣1英吋（2.5公分）內視為污染區"},
+      {"key": "C", "text": "無菌物品放置低於腰部以下仍視為無菌"},
+      {"key": "D", "text": "在無菌野上咳嗽時，應佩戴外科口罩即可不必轉頭"}
+    ],
+    "answer": "B",
+    "explanation": "無菌技術重要原則：（1）無菌野邊緣1英吋（2.5cm）視為污染→答案B正確；（2）無菌物品一旦離開無菌包裝即視為污染，不可回放；（3）低於腰部視為污染；（4）對著無菌野說話、咳嗽、打噴嚏均需轉頭避開；（5）潮濕的無菌物品視為污染（毛細現象將細菌帶入）；（6）有疑問即視為污染。",
+    "difficulty": 2,
+    "tags": "無菌技術,傷口護理,護理基礎"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2020,
+    "source": "護理基礎考點",
+    "stem": "傷口護理中，依傷口清潔程度分類，外科手術後傷口（如膽囊切除術）一般屬於哪一類？",
+    "options": [
+      {"key": "A", "text": "清潔傷口（Clean wound）"},
+      {"key": "B", "text": "清潔污染傷口（Clean-contaminated wound）"},
+      {"key": "C", "text": "污染傷口（Contaminated wound）"},
+      {"key": "D", "text": "骯髒傷口（Dirty/Infected wound）"}
+    ],
+    "answer": "B",
+    "explanation": "外科傷口清潔度分類：（1）清潔傷口—無感染、不接觸呼吸道/消化道/泌尿道（如顱腦手術）；（2）清潔污染傷口—進入消化道/呼吸道/泌尿道但無明顯污染（如膽囊、胃腸手術）；（3）污染傷口—急性發炎無膿液，或開放性新鮮外傷、手術中嚴重違反無菌；（4）骯髒/感染傷口—已有膿液、陳舊外傷、穿孔臟器（如破裂的闌尾）。感染率：清潔<2%、清潔污染<10%、污染<20%、骯髒>25%。",
+    "difficulty": 3,
+    "tags": "傷口護理,傷口分類,護理基礎"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2023,
+    "source": "護理基礎考點",
+    "stem": "靜脈輸液（IV infusion）滴速計算：醫囑為1000 mL NS在8小時輸注完畢，輸液套（IV set）滴液係數（drop factor）為每mL 15滴，每分鐘應滴幾滴？",
+    "options": [
+      {"key": "A", "text": "約21滴/分"},
+      {"key": "B", "text": "約31滴/分"},
+      {"key": "C", "text": "約42滴/分"},
+      {"key": "D", "text": "約56滴/分"}
+    ],
+    "answer": "B",
+    "explanation": "滴速計算公式：滴速（滴/分）= 總量（mL）× 滴液係數（滴/mL）÷ 輸注時間（分）。代入：1000 × 15 ÷（8×60）= 15000 ÷ 480 ≈ 31.25滴/分，約31滴/分。常用滴液係數：巨滴管（macrodrip）15滴/mL或20滴/mL；微滴管（microdrip）60滴/mL。若使用60滴/mL微滴管：1000×60÷480 = 125滴/分。",
+    "difficulty": 3,
+    "tags": "靜脈輸液,滴速計算,護理基礎"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2021,
+    "source": "護理基礎考點",
+    "stem": "靜脈輸液常見併發症中，輸液滲出（infiltration）與靜脈炎（phlebitis）的主要區別為何？",
+    "options": [
+      {"key": "A", "text": "滲出：局部發紅發熱；靜脈炎：局部腫脹冰涼"},
+      {"key": "B", "text": "滲出：局部腫脹冰涼；靜脈炎：沿靜脈走向紅腫熱痛"},
+      {"key": "C", "text": "滲出：沿靜脈走向疼痛；靜脈炎：穿刺點周圍腫脹"},
+      {"key": "D", "text": "滲出：靜脈觸摸有硬索狀；靜脈炎：局部蒼白冰冷"}
+    ],
+    "answer": "B",
+    "explanation": "（1）滲出（infiltration）：輸液進入靜脈周圍組織，表現為穿刺周圍腫脹、蒼白、冰冷、疼痛，無法回血；（2）靜脈炎（phlebitis）：靜脈發炎，沿靜脈走向紅、腫、熱、痛，可觸摸到硬索狀靜脈。處理：滲出→停止輸液，依藥物性質冷/熱敷；靜脈炎→熱敷、抬高患肢、更換輸液部位。血管外滲（extravasation）特指刺激性藥物（化療藥）滲入組織，可能造成組織壞死。",
+    "difficulty": 2,
+    "tags": "靜脈輸液,滲出,靜脈炎,護理基礎"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2022,
+    "source": "護理基礎考點",
+    "stem": "鼻胃管（NG tube）插管後，確認管路位置正確的最可靠方法為何？",
+    "options": [
+      {"key": "A", "text": "注入空氣後聽診上腹部有氣過水聲"},
+      {"key": "B", "text": "將管路末端置於水中確認無氣泡"},
+      {"key": "C", "text": "X光影像確認"},
+      {"key": "D", "text": "抽吸胃液確認pH<5"}
+    ],
+    "answer": "C",
+    "explanation": "確認鼻胃管位置的方法可靠度排序：（1）X光影像確認（最可靠/Gold standard）；（2）抽吸內容物確認pH（胃液pH<5，腸液pH>6，呼吸道液體pH>6）；（3）注氣後聽診（最不可靠，已不建議作為唯一確認方法，因可能誤判）。鼻胃管插入長度：鼻尖→耳垂→劍突，約45～55 cm（成人）。胃管留置期間每次灌食前均需確認位置。",
+    "difficulty": 2,
+    "tags": "鼻胃管,NG tube,管路護理,護理基礎"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2020,
+    "source": "護理基礎考點",
+    "stem": "成人正常呼吸次數（respiratory rate）範圍為何？",
+    "options": [
+      {"key": "A", "text": "8～12次/分"},
+      {"key": "B", "text": "12～20次/分"},
+      {"key": "C", "text": "16～24次/分"},
+      {"key": "D", "text": "20～30次/分"}
+    ],
+    "answer": "B",
+    "explanation": "各年齡層正常呼吸次數：成人12～20次/分；青少年12～20次/分；學齡兒童18～30次/分；嬰兒（1歲以下）30～60次/分。呼吸次數<12次/分稱呼吸過緩（bradypnea），>20次/分稱呼吸過速（tachypnea）。測量呼吸時應在個案不注意的情況下觀察（計數30秒×2，若異常計60秒）。",
+    "difficulty": 1,
+    "tags": "生命徵象,呼吸,護理基礎"
+  },
+  {
+    "category_code": "exam_senior",
+    "q_type": "single",
+    "year": 2024,
+    "source": "護理基礎考點",
+    "stem": "關於鼻胃管灌食（tube feeding）的正確護理原則，下列何者正確？",
+    "options": [
+      {"key": "A", "text": "灌食時個案應採平躺仰臥位以利吸收"},
+      {"key": "B", "text": "灌食結束後應立即協助個案平躺休息"},
+      {"key": "C", "text": "灌食前應先抽吸確認胃殘留量，若超過150～200mL應暫停灌食"},
+      {"key": "D", "text": "為加速灌食，可用注射筒加壓推注食物"}
+    ],
+    "answer": "C",
+    "explanation": "鼻胃管灌食原則：（1）灌食前確認管路位置及胃殘留量，若殘留>150～200mL（或前次灌食量的50%）應暫停→答案C正確；（2）灌食時採半坐臥（Head of Bed）30～45度，避免誤吸；（3）灌食後維持半坐臥至少30～60分鐘；（4）以重力自然滴流，不可加壓推注；（5）每次灌食量不超過350～400mL；（6）食物溫度：室溫或接近體溫（37～40°C）。",
+    "difficulty": 2,
+    "tags": "鼻胃管,灌食,護理基礎"
+  }
+]
